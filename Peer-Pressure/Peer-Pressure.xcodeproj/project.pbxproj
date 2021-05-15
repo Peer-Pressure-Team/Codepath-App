@@ -19,6 +19,7 @@
 		072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3926504B4900F42365 /* ExploreViewController.swift */; };
 		072A3C3F26504B6000F42365 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3E26504B6000F42365 /* GroupViewController.swift */; };
 		072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C4326504B7100F42365 /* ProfileViewController.swift */; };
+		3A90C4A4265053A600906EDF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90C4A3265053A600906EDF /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		072A3C3926504B4900F42365 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		072A3C3E26504B6000F42365 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		072A3C4326504B7100F42365 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3A90C4A3265053A600906EDF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				072A3C0A2650420400F42365 /* Assets.xcassets */,
 				072A3C0C2650420400F42365 /* LaunchScreen.storyboard */,
 				072A3C0F2650420400F42365 /* Info.plist */,
+				3A90C4A3265053A600906EDF /* FeedCell.swift */,
 			);
 			path = "Peer-Pressure";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				072A3C022650420100F42365 /* AppDelegate.swift in Sources */,
 				072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */,
 				072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */,
+				3A90C4A4265053A600906EDF /* FeedCell.swift in Sources */,
 				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,
 				072A3C042650420100F42365 /* SceneDelegate.swift in Sources */,
 			);
