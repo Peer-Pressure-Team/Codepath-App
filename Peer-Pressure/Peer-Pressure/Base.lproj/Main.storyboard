@@ -8,37 +8,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Explore-->
         <scene sceneID="7hU-ym-eE2">
             <objects>
-                <viewController id="W8C-ht-62n" sceneMemberID="viewController">
+                <viewController title="Explore" id="W8C-ht-62n" customClass="ExploreViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KVd-Sm-oQk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vTD-Cr-dd1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="USE-2q-88W"/>
+                    <tabBarItem key="tabBarItem" title="Explore" id="USE-2q-88W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad0-es-Psm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="137"/>
+            <point key="canvasLocation" x="-583" y="714"/>
         </scene>
-        <!--Item 1-->
+        <!--Group-->
+        <scene sceneID="U1s-ic-FyO">
+            <objects>
+                <viewController title="Group" id="BJV-5q-Y4L" customClass="GroupViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v9b-M0-KYG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xoK-Ug-MYn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Group" id="gy9-RX-QE5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nip-iH-frx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="714"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="uvz-t3-ubU">
+            <objects>
+                <viewController title="Profile" id="qjk-zi-FNR" customClass="ProfileViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eFa-Cm-nMQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zfd-I5-kHl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="rrg-E1-ndR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTK-Pz-ac9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="714"/>
+        </scene>
+        <!--Feed-->
         <scene sceneID="urY-lB-UtA">
             <objects>
-                <viewController id="yxD-IE-lRO" sceneMemberID="viewController">
+                <viewController title="Feed" id="yxD-IE-lRO" customClass="FeedViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQI-0G-68v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="7Qq-GM-CgX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="pFj-Rm-3fV"/>
+                    <tabBarItem key="tabBarItem" title="Feed" id="pFj-Rm-3fV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax6-iH-KIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="-469"/>
+            <point key="canvasLocation" x="-1272" y="714"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bWk-yV-RlA">
@@ -52,11 +84,13 @@
                     <connections>
                         <segue destination="yxD-IE-lRO" kind="relationship" relationship="viewControllers" id="Wy3-35-goT"/>
                         <segue destination="W8C-ht-62n" kind="relationship" relationship="viewControllers" id="bKU-nt-F8H"/>
+                        <segue destination="qjk-zi-FNR" kind="relationship" relationship="viewControllers" id="Uhv-bQ-QyI"/>
+                        <segue destination="BJV-5q-Y4L" kind="relationship" relationship="viewControllers" id="jrD-KK-Efr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQb-fi-SOW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-195" y="-166"/>
+            <point key="canvasLocation" x="-328" y="-1"/>
         </scene>
     </scenes>
     <resources>

@@ -15,6 +15,10 @@
 		072A3C0E2650420400F42365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072A3C0C2650420400F42365 /* LaunchScreen.storyboard */; };
 		072A3C192650420400F42365 /* Peer_PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C182650420400F42365 /* Peer_PressureTests.swift */; };
 		072A3C242650420400F42365 /* Peer_PressureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C232650420400F42365 /* Peer_PressureUITests.swift */; };
+		072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3426504B3400F42365 /* FeedViewController.swift */; };
+		072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3926504B4900F42365 /* ExploreViewController.swift */; };
+		072A3C3F26504B6000F42365 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3E26504B6000F42365 /* GroupViewController.swift */; };
+		072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C4326504B7100F42365 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		072A3C1F2650420400F42365 /* Peer-PressureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peer-PressureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		072A3C232650420400F42365 /* Peer_PressureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer_PressureUITests.swift; sourceTree = "<group>"; };
 		072A3C252650420400F42365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072A3C3426504B3400F42365 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		072A3C3926504B4900F42365 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		072A3C3E26504B6000F42365 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		072A3C4326504B7100F42365 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 		072A3BF52650420100F42365 = {
 			isa = PBXGroup;
 			children = (
+				072A3C4326504B7100F42365 /* ProfileViewController.swift */,
+				072A3C3E26504B6000F42365 /* GroupViewController.swift */,
+				072A3C3926504B4900F42365 /* ExploreViewController.swift */,
+				072A3C3426504B3400F42365 /* FeedViewController.swift */,
 				072A3C002650420100F42365 /* Peer-Pressure */,
 				072A3C172650420400F42365 /* Peer-PressureTests */,
 				072A3C222650420400F42365 /* Peer-PressureUITests */,
@@ -258,8 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072A3C3F26504B6000F42365 /* GroupViewController.swift in Sources */,
 				072A3C062650420100F42365 /* ViewController.swift in Sources */,
 				072A3C022650420100F42365 /* AppDelegate.swift in Sources */,
+				072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */,
+				072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */,
+				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,
 				072A3C042650420100F42365 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
