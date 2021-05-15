@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072A3C022650420100F42365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C012650420100F42365 /* AppDelegate.swift */; };
+		072A3C042650420100F42365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C032650420100F42365 /* SceneDelegate.swift */; };
+		072A3C062650420100F42365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C052650420100F42365 /* ViewController.swift */; };
+		072A3C092650420100F42365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072A3C072650420100F42365 /* Main.storyboard */; };
+		072A3C0B2650420400F42365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072A3C0A2650420400F42365 /* Assets.xcassets */; };
+		072A3C0E2650420400F42365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072A3C0C2650420400F42365 /* LaunchScreen.storyboard */; };
+		072A3C192650420400F42365 /* Peer_PressureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C182650420400F42365 /* Peer_PressureTests.swift */; };
+		072A3C242650420400F42365 /* Peer_PressureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C232650420400F42365 /* Peer_PressureUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		072A3C152650420400F42365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 072A3BF62650420100F42365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 072A3BFD2650420100F42365;
+			remoteInfo = "Peer-Pressure";
+		};
+		072A3C202650420400F42365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 072A3BF62650420100F42365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 072A3BFD2650420100F42365;
+			remoteInfo = "Peer-Pressure";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		072A3BFE2650420100F42365 /* Peer-Pressure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peer-Pressure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		072A3C012650420100F42365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		072A3C032650420100F42365 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		072A3C052650420100F42365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		072A3C082650420100F42365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		072A3C0A2650420400F42365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		072A3C0D2650420400F42365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		072A3C0F2650420400F42365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072A3C142650420400F42365 /* Peer-PressureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peer-PressureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		072A3C182650420400F42365 /* Peer_PressureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer_PressureTests.swift; sourceTree = "<group>"; };
+		072A3C1A2650420400F42365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072A3C1F2650420400F42365 /* Peer-PressureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peer-PressureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		072A3C232650420400F42365 /* Peer_PressureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer_PressureUITests.swift; sourceTree = "<group>"; };
+		072A3C252650420400F42365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		072A3BFB2650420100F42365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072A3C112650420400F42365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072A3C1C2650420400F42365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072A3BF52650420100F42365 = {
+			isa = PBXGroup;
+			children = (
+				072A3C002650420100F42365 /* Peer-Pressure */,
+				072A3C172650420400F42365 /* Peer-PressureTests */,
+				072A3C222650420400F42365 /* Peer-PressureUITests */,
+				072A3BFF2650420100F42365 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		072A3BFF2650420100F42365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				072A3BFE2650420100F42365 /* Peer-Pressure.app */,
+				072A3C142650420400F42365 /* Peer-PressureTests.xctest */,
+				072A3C1F2650420400F42365 /* Peer-PressureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		072A3C002650420100F42365 /* Peer-Pressure */ = {
+			isa = PBXGroup;
+			children = (
+				072A3C012650420100F42365 /* AppDelegate.swift */,
+				072A3C032650420100F42365 /* SceneDelegate.swift */,
+				072A3C052650420100F42365 /* ViewController.swift */,
+				072A3C072650420100F42365 /* Main.storyboard */,
+				072A3C0A2650420400F42365 /* Assets.xcassets */,
+				072A3C0C2650420400F42365 /* LaunchScreen.storyboard */,
+				072A3C0F2650420400F42365 /* Info.plist */,
+			);
+			path = "Peer-Pressure";
+			sourceTree = "<group>";
+		};
+		072A3C172650420400F42365 /* Peer-PressureTests */ = {
+			isa = PBXGroup;
+			children = (
+				072A3C182650420400F42365 /* Peer_PressureTests.swift */,
+				072A3C1A2650420400F42365 /* Info.plist */,
+			);
+			path = "Peer-PressureTests";
+			sourceTree = "<group>";
+		};
+		072A3C222650420400F42365 /* Peer-PressureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				072A3C232650420400F42365 /* Peer_PressureUITests.swift */,
+				072A3C252650420400F42365 /* Info.plist */,
+			);
+			path = "Peer-PressureUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		072A3BFD2650420100F42365 /* Peer-Pressure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 072A3C282650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-Pressure" */;
+			buildPhases = (
+				072A3BFA2650420100F42365 /* Sources */,
+				072A3BFB2650420100F42365 /* Frameworks */,
+				072A3BFC2650420100F42365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Peer-Pressure";
+			productName = "Peer-Pressure";
+			productReference = 072A3BFE2650420100F42365 /* Peer-Pressure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		072A3C132650420400F42365 /* Peer-PressureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 072A3C2B2650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-PressureTests" */;
+			buildPhases = (
+				072A3C102650420400F42365 /* Sources */,
+				072A3C112650420400F42365 /* Frameworks */,
+				072A3C122650420400F42365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				072A3C162650420400F42365 /* PBXTargetDependency */,
+			);
+			name = "Peer-PressureTests";
+			productName = "Peer-PressureTests";
+			productReference = 072A3C142650420400F42365 /* Peer-PressureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		072A3C1E2650420400F42365 /* Peer-PressureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 072A3C2E2650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-PressureUITests" */;
+			buildPhases = (
+				072A3C1B2650420400F42365 /* Sources */,
+				072A3C1C2650420400F42365 /* Frameworks */,
+				072A3C1D2650420400F42365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				072A3C212650420400F42365 /* PBXTargetDependency */,
+			);
+			name = "Peer-PressureUITests";
+			productName = "Peer-PressureUITests";
+			productReference = 072A3C1F2650420400F42365 /* Peer-PressureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		072A3BF62650420100F42365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					072A3BFD2650420100F42365 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					072A3C132650420400F42365 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 072A3BFD2650420100F42365;
+					};
+					072A3C1E2650420400F42365 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 072A3BFD2650420100F42365;
+					};
+				};
+			};
+			buildConfigurationList = 072A3BF92650420100F42365 /* Build configuration list for PBXProject "Peer-Pressure" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 072A3BF52650420100F42365;
+			productRefGroup = 072A3BFF2650420100F42365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				072A3BFD2650420100F42365 /* Peer-Pressure */,
+				072A3C132650420400F42365 /* Peer-PressureTests */,
+				072A3C1E2650420400F42365 /* Peer-PressureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		072A3BFC2650420100F42365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072A3C0E2650420400F42365 /* LaunchScreen.storyboard in Resources */,
+				072A3C0B2650420400F42365 /* Assets.xcassets in Resources */,
+				072A3C092650420100F42365 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072A3C122650420400F42365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072A3C1D2650420400F42365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		072A3BFA2650420100F42365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072A3C062650420100F42365 /* ViewController.swift in Sources */,
+				072A3C022650420100F42365 /* AppDelegate.swift in Sources */,
+				072A3C042650420100F42365 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072A3C102650420400F42365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072A3C192650420400F42365 /* Peer_PressureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		072A3C1B2650420400F42365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072A3C242650420400F42365 /* Peer_PressureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		072A3C162650420400F42365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 072A3BFD2650420100F42365 /* Peer-Pressure */;
+			targetProxy = 072A3C152650420400F42365 /* PBXContainerItemProxy */;
+		};
+		072A3C212650420400F42365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 072A3BFD2650420100F42365 /* Peer-Pressure */;
+			targetProxy = 072A3C202650420400F42365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		072A3C072650420100F42365 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072A3C082650420100F42365 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		072A3C0C2650420400F42365 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072A3C0D2650420400F42365 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		072A3C262650420400F42365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		072A3C272650420400F42365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		072A3C292650420400F42365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL4GUJL6ZX;
+				INFOPLIST_FILE = "Peer-Pressure/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Peer-Pressure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		072A3C2A2650420400F42365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL4GUJL6ZX;
+				INFOPLIST_FILE = "Peer-Pressure/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Peer-Pressure";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		072A3C2C2650420400F42365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL4GUJL6ZX;
+				INFOPLIST_FILE = "Peer-PressureTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Peer-PressureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peer-Pressure.app/Peer-Pressure";
+			};
+			name = Debug;
+		};
+		072A3C2D2650420400F42365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL4GUJL6ZX;
+				INFOPLIST_FILE = "Peer-PressureTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Peer-PressureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peer-Pressure.app/Peer-Pressure";
+			};
+			name = Release;
+		};
+		072A3C2F2650420400F42365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL4GUJL6ZX;
+				INFOPLIST_FILE = "Peer-PressureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Peer-PressureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Peer-Pressure";
+			};
+			name = Debug;
+		};
+		072A3C302650420400F42365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BL4GUJL6ZX;
+				INFOPLIST_FILE = "Peer-PressureUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.Peer-PressureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Peer-Pressure";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		072A3BF92650420100F42365 /* Build configuration list for PBXProject "Peer-Pressure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072A3C262650420400F42365 /* Debug */,
+				072A3C272650420400F42365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		072A3C282650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-Pressure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072A3C292650420400F42365 /* Debug */,
+				072A3C2A2650420400F42365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		072A3C2B2650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-PressureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072A3C2C2650420400F42365 /* Debug */,
+				072A3C2D2650420400F42365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		072A3C2E2650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-PressureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				072A3C2F2650420400F42365 /* Debug */,
+				072A3C302650420400F42365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 072A3BF62650420100F42365 /* Project object */;
+}
