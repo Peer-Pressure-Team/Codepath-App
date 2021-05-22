@@ -17,13 +17,13 @@
 		072A3C242650420400F42365 /* Peer_PressureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C232650420400F42365 /* Peer_PressureUITests.swift */; };
 		072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3426504B3400F42365 /* FeedViewController.swift */; };
 		072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3926504B4900F42365 /* ExploreViewController.swift */; };
-		072A3C3F26504B6000F42365 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3E26504B6000F42365 /* GroupViewController.swift */; };
 		072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C4326504B7100F42365 /* ProfileViewController.swift */; };
 		073E520B2653641800934C75 /* HabbitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E520A2653641800934C75 /* HabbitCell.swift */; };
 		073E5210265367F800934C75 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E520F265367F800934C75 /* GroupCell.swift */; };
 		073E521526536B1C00934C75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E521426536B1C00934C75 /* LoginViewController.swift */; };
 		47D2D25358B078AFA96D49C0 /* Pods_Peer_Pressure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD6B729EF3EB89987A98B2B /* Pods_Peer_Pressure.framework */; };
 		A9F77B8054F0B8E482D6B8EA /* Pods_Peer_Pressure_Peer_PressureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCA3464B21E116AFCFC8225 /* Pods_Peer_Pressure_Peer_PressureUITests.framework */; };
+		B76EDFE72658F65E00386DBA /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76EDFE62658F65E00386DBA /* GroupViewController.swift */; };
 		E8A368E5D9EEED50821238A2 /* Pods_Peer_PressureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A6B58F875B47140D61830 /* Pods_Peer_PressureTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,6 @@
 		072A3C252650420400F42365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		072A3C3426504B3400F42365 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
 		072A3C3926504B4900F42365 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExploreViewController.swift; path = ../ExploreViewController.swift; sourceTree = "<group>"; };
-		072A3C3E26504B6000F42365 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupViewController.swift; path = ../GroupViewController.swift; sourceTree = "<group>"; };
 		072A3C4326504B7100F42365 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		073E520A2653641800934C75 /* HabbitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabbitCell.swift; sourceTree = "<group>"; };
 		073E520F265367F800934C75 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		8AD6B729EF3EB89987A98B2B /* Pods_Peer_Pressure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peer_Pressure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9873FE7130F65EAF87D8A9F7 /* Pods-Peer-Pressure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure.debug.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure/Pods-Peer-Pressure.debug.xcconfig"; sourceTree = "<group>"; };
 		AFBDE2645975F8CFEB6B95BD /* Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B76EDFE62658F65E00386DBA /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		CEDFD929B787D371EB45872E /* Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,7 +132,6 @@
 			children = (
 				072A3C012650420100F42365 /* AppDelegate.swift */,
 				072A3C4326504B7100F42365 /* ProfileViewController.swift */,
-				072A3C3E26504B6000F42365 /* GroupViewController.swift */,
 				072A3C3926504B4900F42365 /* ExploreViewController.swift */,
 				072A3C3426504B3400F42365 /* FeedViewController.swift */,
 				072A3C032650420100F42365 /* SceneDelegate.swift */,
@@ -144,6 +143,7 @@
 				073E520A2653641800934C75 /* HabbitCell.swift */,
 				073E520F265367F800934C75 /* GroupCell.swift */,
 				073E521426536B1C00934C75 /* LoginViewController.swift */,
+				B76EDFE62658F65E00386DBA /* GroupViewController.swift */,
 			);
 			path = "Peer-Pressure";
 			sourceTree = "<group>";
@@ -428,10 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				073E5210265367F800934C75 /* GroupCell.swift in Sources */,
-				072A3C3F26504B6000F42365 /* GroupViewController.swift in Sources */,
 				072A3C062650420100F42365 /* ViewController.swift in Sources */,
 				072A3C022650420100F42365 /* AppDelegate.swift in Sources */,
 				072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */,
+				B76EDFE72658F65E00386DBA /* GroupViewController.swift in Sources */,
 				072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */,
 				073E520B2653641800934C75 /* HabbitCell.swift in Sources */,
 				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,

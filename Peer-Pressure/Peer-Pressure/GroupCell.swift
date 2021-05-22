@@ -9,6 +9,10 @@ import UIKit
 
 class GroupCell: UITableViewCell {
 
+    @IBOutlet weak var groupImage: UIImageView!
+    @IBOutlet weak var groupName: UILabel!
+    @IBOutlet weak var groupMemberCount: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
