@@ -78,11 +78,15 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iga-Yq-p4Z">
                                                     <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                                    <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="4Eb-DQ-E3R"/>
                                                         <constraint firstAttribute="width" secondItem="iga-Yq-p4Z" secondAttribute="height" multiplier="1:1" id="jey-2v-SuM"/>
                                                         <constraint firstAttribute="height" constant="80" id="yRT-2k-nY8"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="9Fi-AP-vyF" appends="YES" id="hhs-g2-6bu"/>
+                                                    </connections>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTZ-JS-iyA">
                                                     <rect key="frame" x="96" y="11" width="83" height="21"/>
@@ -109,6 +113,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUu-lT-hm9">
                                                     <rect key="frame" x="281" y="115" width="21" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <gestureRecognizers/>
                                                     <state key="normal" image="heart" catalog="system"/>
                                                     <connections>
                                                         <action selector="onLike:" destination="NMp-cv-QdU" eventType="touchUpInside" id="qhY-Fi-eOI"/>
@@ -133,12 +138,52 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="kgt-lx-41F">
-                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="OFk-mP-hN8"/>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="OFk-mP-hN8">
+                            <connections>
+                                <segue destination="EVc-7R-M64" kind="show" id="QgX-v1-7iX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ax6-iH-KIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9Fi-AP-vyF"/>
             </objects>
             <point key="canvasLocation" x="-1272.4637681159422" y="1467.8571428571429"/>
+        </scene>
+        <!--Add Status View Controller-->
+        <scene sceneID="fdr-9R-yMN">
+            <objects>
+                <viewController id="EVc-7R-M64" customClass="AddStatusViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TYd-au-Bnb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write status here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tOB-YE-hdy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XMs-49-SC3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SiI-wT-936">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="3i2-IU-r7F">
+                            <connections>
+                                <action selector="onSubmit:" destination="EVc-7R-M64" id="Xut-lD-yOp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="statusTextView" destination="tOB-YE-hdy" id="1r1-On-EyF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Dt-Ol-tPu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562.31884057971024" y="1467.8571428571429"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bWk-yV-RlA">
@@ -183,6 +228,9 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

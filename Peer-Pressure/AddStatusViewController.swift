@@ -1,27 +1,19 @@
 //
-//  FeedViewController.swift
+//  AddStatusViewController.swift
 //  Peer-Pressure
 //
-//  Created by qiru hu on 5/15/21.
+//  Created by Adrian Lindell on 5/21/21.
 //
 
 import UIKit
-//import Parse
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-//    var statuses = [PFObject]()
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
+class AddStatusViewController: UIViewController {
+    @IBAction func onSubmit(_ sender: Any) {
+        let status = statusTextView.text
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = statuses[indexPath.row] as! FeedCell
-        let cell = FeedCell()
-        return cell;
-    }
-
+    @IBOutlet weak var statusTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

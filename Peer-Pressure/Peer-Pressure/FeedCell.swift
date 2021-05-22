@@ -6,6 +6,8 @@
 //
 
 import UIKit
+//import Parse
+//import AlamofireImage
 
 class FeedCell: UITableViewCell {
     
@@ -19,8 +21,6 @@ class FeedCell: UITableViewCell {
     
     @IBAction func onLike(_ sender: Any) {
     }
-    
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
