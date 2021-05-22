@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I4x-C0-LwM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I4x-C0-LwM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +13,7 @@
             <objects>
                 <viewController title="Explore" id="W8C-ht-62n" customClass="ExploreViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KVd-Sm-oQk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vTD-Cr-dd1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,7 +29,7 @@
             <objects>
                 <viewController title="Group" id="BJV-5q-Y4L" customClass="GroupViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v9b-M0-KYG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xoK-Ug-MYn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,7 +45,7 @@
             <objects>
                 <viewController title="Profile" id="qjk-zi-FNR" customClass="ProfileViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eFa-Cm-nMQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3u-v6-gZu">
@@ -66,7 +66,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabbitCell" rowHeight="85" id="cNz-rc-IMN" customClass="HabbitCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="85"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="85"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cNz-rc-IMN" id="86C-iW-opB">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
@@ -139,7 +139,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="98" id="4It-4L-PBJ" customClass="GroupCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="98"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="98"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4It-4L-PBJ" id="j4a-5G-0KI">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
@@ -218,7 +218,7 @@
             <objects>
                 <viewController title="Feed" id="yxD-IE-lRO" customClass="FeedViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GQI-0G-68v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="7Qq-GM-CgX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,7 +326,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="bWk-yV-RlA">
             <objects>
-                <tabBarController id="UFc-8W-ji8" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="UFc-8W-ji8" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aYi-Jb-kpp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -350,7 +350,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="rrg-E1-ndR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fIA-MG-dKg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
