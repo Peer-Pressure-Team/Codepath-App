@@ -21,6 +21,7 @@
 		072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C4326504B7100F42365 /* ProfileViewController.swift */; };
 		3A90C4A4265053A600906EDF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90C4A3265053A600906EDF /* FeedCell.swift */; };
 		3A92A74C2658B64F00600D97 /* AddStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92A74B2658B64F00600D97 /* AddStatusViewController.swift */; };
+		3A92A7542658C18000600D97 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92A7532658C18000600D97 /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		072A3C4326504B7100F42365 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3A90C4A3265053A600906EDF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		3A92A74B2658B64F00600D97 /* AddStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStatusViewController.swift; sourceTree = "<group>"; };
+		3A92A7532658C18000600D97 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		072A3BF52650420100F42365 = {
 			isa = PBXGroup;
 			children = (
+				3A92A7532658C18000600D97 /* CommentCell.swift */,
 				3A92A74B2658B64F00600D97 /* AddStatusViewController.swift */,
 				072A3C4326504B7100F42365 /* ProfileViewController.swift */,
 				072A3C3E26504B6000F42365 /* GroupViewController.swift */,
@@ -281,6 +284,7 @@
 				072A3C022650420100F42365 /* AppDelegate.swift in Sources */,
 				072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */,
 				072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */,
+				3A92A7542658C18000600D97 /* CommentCell.swift in Sources */,
 				3A90C4A4265053A600906EDF /* FeedCell.swift in Sources */,
 				3A92A74C2658B64F00600D97 /* AddStatusViewController.swift in Sources */,
 				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,
