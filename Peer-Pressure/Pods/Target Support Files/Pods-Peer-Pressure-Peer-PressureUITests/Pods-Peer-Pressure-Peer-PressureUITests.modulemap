@@ -1,0 +1,6 @@
+framework module Pods_Peer_Pressure_Peer_PressureUITests {
+  umbrella header "Pods-Peer-Pressure-Peer-PressureUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
