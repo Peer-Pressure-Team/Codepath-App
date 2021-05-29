@@ -17,21 +17,36 @@ class GroupViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //circularImage.layer.masksToBounds = true
-        //circularImage.layer.cornerRadius = circularImage.bounds.width / 2
+        
+        groupTableView.delegate = self
+        groupTableView.dataSource = self
+        
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "Group")
+        //query.includeKey("author")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (groups, error) in
+            if groups != nil {
+                self.groups = groups!
+                self.groupTableView.reloadData()
+            }
+            
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return groups.count
+        
+        if tableView == groupTableView {
+            return groups.count
+        }
+        else {
+            return 5
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,6 +63,12 @@ class GroupViewController: UITableViewController {
         let url = URL(string: urlString)!
         
         cell.groupImage.af.setImage(withURL: url)
+        
+        cell.groupImage.layer.borderWidth = 1
+        cell.groupImage.layer.masksToBounds = false
+        cell.groupImage.layer.borderColor = UIColor.clear.cgColor
+        cell.groupImage.layer.cornerRadius = cell.groupImage.frame.height/2
+        cell.groupImage.clipsToBounds = true
         
         return cell
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I4x-C0-LwM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UFc-8W-ji8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -41,25 +41,52 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGQ-cW-NWa">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MGQ-cW-NWa">
                                             <rect key="frame" x="7" y="4" width="100" height="102"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="GhF-YD-Id2"/>
+                                                <constraint firstAttribute="height" constant="102" id="W4F-2o-lWA"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Group Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-mC-deV">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Group Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2H-mC-deV">
                                             <rect key="frame" x="115" y="11" width="118" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="ipc-fe-j7A"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dco-Zx-CX9">
-                                            <rect key="frame" x="115" y="49" width="121" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Member Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dco-Zx-CX9">
+                                            <rect key="frame" x="115" y="43" width="121" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="BAx-Z6-bKg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Group Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cw5-Iq-BSM">
+                                            <rect key="frame" x="115" y="73" width="91" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="W00-dL-sgx"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Cw5-Iq-BSM" firstAttribute="top" secondItem="Dco-Zx-CX9" secondAttribute="bottom" constant="8" symbolic="YES" id="14o-4b-Coz"/>
+                                        <constraint firstItem="Cw5-Iq-BSM" firstAttribute="top" secondItem="Dco-Zx-CX9" secondAttribute="bottom" constant="8" symbolic="YES" id="AiV-93-GYE"/>
+                                        <constraint firstItem="Dco-Zx-CX9" firstAttribute="leading" secondItem="MGQ-cW-NWa" secondAttribute="trailing" constant="8" symbolic="YES" id="U9N-ZZ-9MM"/>
+                                        <constraint firstItem="Dco-Zx-CX9" firstAttribute="top" secondItem="O2H-mC-deV" secondAttribute="bottom" constant="8" symbolic="YES" id="e7H-td-AQa"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Cw5-Iq-BSM" secondAttribute="bottom" constant="4" id="g0N-7w-XfR"/>
+                                        <constraint firstItem="O2H-mC-deV" firstAttribute="top" secondItem="Fz2-XG-Ffz" secondAttribute="topMargin" id="hNy-4p-cmO"/>
+                                        <constraint firstItem="O2H-mC-deV" firstAttribute="leading" secondItem="MGQ-cW-NWa" secondAttribute="trailing" constant="8" symbolic="YES" id="uAl-3K-u4K"/>
+                                        <constraint firstItem="Dco-Zx-CX9" firstAttribute="top" secondItem="O2H-mC-deV" secondAttribute="bottom" constant="8" symbolic="YES" id="v7E-xj-DDF"/>
+                                        <constraint firstItem="Cw5-Iq-BSM" firstAttribute="leading" secondItem="MGQ-cW-NWa" secondAttribute="trailing" constant="8" symbolic="YES" id="wp9-Nr-whB"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="groupImage" destination="MGQ-cW-NWa" id="qbY-5z-Kh1"/>
@@ -110,6 +137,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Create" id="T5w-3M-10g">
                                             <color key="tintColor" systemColor="labelColor"/>
+                                            <connections>
+                                                <action selector="onCreateButton:" destination="6Ab-Bb-hnq" id="Qhy-rm-37D"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -136,6 +166,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="groupName" destination="hbf-vI-wUl" id="f4H-OM-Ddg"/>
                         <outlet property="groupPicture" destination="6gj-yR-R45" id="Sr1-k3-a3t"/>
                     </connections>
                 </viewController>

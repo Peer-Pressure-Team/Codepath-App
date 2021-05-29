@@ -1,10 +1,3 @@
-//
-//  CreateGroupViewController.swift
-//  Peer-Pressure
-//
-//  Created by Leonardo Valdivia on 5/29/21.
-//
-
 import UIKit
 import AlamofireImage
 import Parse
@@ -12,6 +5,8 @@ import Parse
 class CreateGroupViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     @IBOutlet weak var groupPicture: UIImageView!
+    @IBOutlet weak var groupName: UITextField!
+    
     @IBAction func onBackButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -30,6 +25,27 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         present(picker, animated: true, completion: nil)
     }
     
+    @IBAction func onCreateButton(_ sender: Any) {
+        let group = PFObject(className: "Group")
+        
+        group["groupName"] = groupName.text!
+        //group["author"] = PFUser.current()!
+        
+        let imageData = groupPicture.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        
+        group["image"] = file
+        
+        group.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved")
+            } else {
+                print("error!")
+            }
+        }
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
         
@@ -40,7 +56,6 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         dismiss(animated: true, completion: nil)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,18 +64,5 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         groupPicture.layer.borderColor = UIColor.clear.cgColor
         groupPicture.layer.cornerRadius = groupPicture.frame.height/2
         groupPicture.clipsToBounds = true
-        // Do any additional setup after loading the view.
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
