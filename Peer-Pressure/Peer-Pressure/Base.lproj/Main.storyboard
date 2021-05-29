@@ -60,6 +60,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Group Members: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dco-Zx-CX9">
                                             <rect key="frame" x="115" y="43" width="279" height="22"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="4yJ-Hc-9rJ"/>
                                                 <constraint firstAttribute="height" constant="22" id="BAx-Z6-bKg"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -79,12 +80,16 @@
                                     <constraints>
                                         <constraint firstItem="Cw5-Iq-BSM" firstAttribute="top" secondItem="Dco-Zx-CX9" secondAttribute="bottom" constant="8" symbolic="YES" id="14o-4b-Coz"/>
                                         <constraint firstItem="Cw5-Iq-BSM" firstAttribute="top" secondItem="Dco-Zx-CX9" secondAttribute="bottom" constant="8" symbolic="YES" id="AiV-93-GYE"/>
+                                        <constraint firstItem="Cw5-Iq-BSM" firstAttribute="top" secondItem="Dco-Zx-CX9" secondAttribute="bottom" constant="8" symbolic="YES" id="TxO-F5-H0p"/>
                                         <constraint firstItem="Dco-Zx-CX9" firstAttribute="leading" secondItem="MGQ-cW-NWa" secondAttribute="trailing" constant="8" symbolic="YES" id="U9N-ZZ-9MM"/>
+                                        <constraint firstItem="Dco-Zx-CX9" firstAttribute="top" secondItem="O2H-mC-deV" secondAttribute="bottom" constant="8" symbolic="YES" id="aTz-Hy-R6o"/>
+                                        <constraint firstItem="Dco-Zx-CX9" firstAttribute="top" secondItem="O2H-mC-deV" secondAttribute="bottom" constant="8" symbolic="YES" id="b4Q-qb-YBy"/>
                                         <constraint firstItem="Dco-Zx-CX9" firstAttribute="top" secondItem="O2H-mC-deV" secondAttribute="bottom" constant="8" symbolic="YES" id="e7H-td-AQa"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Cw5-Iq-BSM" secondAttribute="bottom" constant="4" id="g0N-7w-XfR"/>
                                         <constraint firstItem="O2H-mC-deV" firstAttribute="top" secondItem="Fz2-XG-Ffz" secondAttribute="topMargin" id="hNy-4p-cmO"/>
                                         <constraint firstItem="O2H-mC-deV" firstAttribute="leading" secondItem="MGQ-cW-NWa" secondAttribute="trailing" constant="8" symbolic="YES" id="uAl-3K-u4K"/>
                                         <constraint firstItem="Dco-Zx-CX9" firstAttribute="top" secondItem="O2H-mC-deV" secondAttribute="bottom" constant="8" symbolic="YES" id="v7E-xj-DDF"/>
+                                        <constraint firstItem="Cw5-Iq-BSM" firstAttribute="top" secondItem="Dco-Zx-CX9" secondAttribute="bottom" constant="8" symbolic="YES" id="wIx-Eb-G58"/>
                                         <constraint firstItem="Cw5-Iq-BSM" firstAttribute="leading" secondItem="MGQ-cW-NWa" secondAttribute="trailing" constant="8" symbolic="YES" id="wp9-Nr-whB"/>
                                     </constraints>
                                 </tableViewCellContentView>

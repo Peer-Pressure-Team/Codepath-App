@@ -35,7 +35,6 @@ class GroupViewController: UITableViewController {
                 self.groups = groups!
                 self.groupTableView.reloadData()
             }
-            
         }
     }
 
@@ -56,7 +55,7 @@ class GroupViewController: UITableViewController {
         
         cell.groupName.text = group["groupName"] as! String
         
-        cell.groupMemberCount.text =
+        cell.groupMemberCount.text! = "Group Members: \(group["memberCount"] ?? "" )"
         
         let imageFile = group["image"] as! PFFileObject
         let urlString = imageFile.url!
