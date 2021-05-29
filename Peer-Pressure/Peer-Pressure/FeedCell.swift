@@ -9,8 +9,6 @@ import UIKit
 import Parse
 import AlamofireImage
 
-// do we want to have a number of likes (possibly doesn't save liked status) or how to store a certain user's likes?
-
 class FeedCell: UITableViewCell {
     var isLiked:Bool = false
     var statusId:String = "id"
@@ -20,9 +18,6 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likesLabel: UILabel!
-    
-    @IBAction func onReply(_ sender: Any) {
-    }
     
     @IBAction func onLike(_ sender: Any) {
         //query this status by objectId
