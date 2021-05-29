@@ -15,6 +15,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
     var groups = [PFObject]()
     //var user : PFObject?
     
+    
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var habbitTableView: UITableView!
     
@@ -108,7 +109,30 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         
         self.habbitTableView.estimatedRowHeight = 40.0;
         self.habbitTableView.rowHeight = UITableView.automaticDimension;
+        self.groupTableView.estimatedRowHeight = 50.0;
+        self.groupTableView.rowHeight = UITableView.automaticDimension;
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(ProfileViewController.reloadHabits), name: NSNotification.Name(rawValue: "refresh"), object: nil)
     }
+    
+    @objc func reloadHabits (notification: NSNotification) {
+        print("reloadHabits")
+        var user = PFUser.current()!
+        let secondQuery = PFQuery(className: "Habit")
+        secondQuery.includeKeys(["habitname","goalCounts","actualCount"])
+        secondQuery.whereKey("username", equalTo: user["username"]!)
+
+        secondQuery.findObjectsInBackground { (habits, error) in
+                        if habits != nil {
+                            self.habits = habits!
+                            print("habbits: \(self.habits.count)")
+                            self.habbitTableView.reloadData()
+                        } else {
+                            print("error in finding habbits: \(error)")
+                        }
+                    }
+    }
+
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -117,19 +141,19 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         username.text = user.username
         
 
-//        var firstQuery:  PFQuery = PFUser.query()!
-//        firstQuery.includeKeys(["location","publicity"])
-//        firstQuery.whereKey("username", equalTo: user.username!)
-//
-//        firstQuery.getFirstObjectInBackground
-//        {(user, error) in
-//                        if user != nil {
-//                            self.locationLabel.text = (user?["location"] as! String)
-//
-//                        } else {
-//                            print("error in finding user: \(error)")
-//                        }
-//        }
+        var firstQuery = PFQuery(className: "Usersetting")
+        //firstQuery.includeKeys(["location","publicity"])
+        firstQuery.whereKey("username", equalTo: user.username!)
+
+        firstQuery.getFirstObjectInBackground
+        {(user, error) in
+                        if user != nil {
+                            self.locationLabel.text = (user?["location"] as! String)
+
+                        } else {
+                            print("error in finding usersetting: \(error)")
+                        }
+        }
         let useravatar = user["image"] as? PFFileObject
         useravatar?.getDataInBackground{ (imageData, error)in
             DispatchQueue.main.async {
@@ -149,6 +173,67 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         secondQuery.findObjectsInBackground { (habits, error) in
                         if habits != nil {
                             self.habits = habits!
+                            print("habbits: \(self.habits.count)")
+                            self.habbitTableView.reloadData()
+                        } else {
+                            print("error in finding habbits: \(error)")
+                        }
+                    }
+        
+        let thirdQuery = PFQuery(className: "Group")
+        thirdQuery.includeKeys(["groupName","location","image","memberCount", "groupProgress"])
+        thirdQuery.whereKey("username", equalTo: user["username"]!)
+
+        thirdQuery.findObjectsInBackground { (groups, error) in
+                        if groups != nil {
+                            self.groups = groups!
+                            self.groupTableView.reloadData()
+                        } else {
+                            print("error in finding groups: \(error)")
+                        }
+                    }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+        var user = PFUser.current()!
+        username.text = user.username
+        
+
+        var firstQuery = PFQuery(className: "Usersetting")
+        //firstQuery.includeKeys(["location","publicity"])
+        firstQuery.whereKey("username", equalTo: user.username!)
+
+        firstQuery.getFirstObjectInBackground
+        {(user, error) in
+                        if user != nil {
+                            self.locationLabel.text = (user?["location"] as! String)
+
+                        } else {
+                            print("error in finding usersetting: \(error)")
+                        }
+        }
+        let useravatar = user["image"] as? PFFileObject
+        useravatar?.getDataInBackground{ (imageData, error)in
+            DispatchQueue.main.async {
+              if imageData != nil, error == nil {
+                let image = UIImage(data: imageData!)
+                self.userimage.image = image
+
+              }
+           }
+        }
+        
+        
+        let secondQuery = PFQuery(className: "Habit")
+        secondQuery.includeKeys(["habitname","goalCounts","actualCount"])
+        secondQuery.whereKey("username", equalTo: user["username"]!)
+
+        secondQuery.findObjectsInBackground { (habits, error) in
+                        if habits != nil {
+                            self.habits = habits!
+                            print("habbits: \(self.habits.count)")
                             self.habbitTableView.reloadData()
                         } else {
                             print("error in finding habbits: \(error)")
@@ -189,6 +274,9 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         }
     }
 
+    @IBAction func addHabitButton(_ sender: Any) {
+        performSegue(withIdentifier: "CreateHabitSegue", sender: self)
+    }
     
     /*
     // MARK: - Navigation
