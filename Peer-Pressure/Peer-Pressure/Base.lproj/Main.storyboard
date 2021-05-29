@@ -371,6 +371,29 @@
             </objects>
             <point key="canvasLocation" x="-1272.4637681159422" y="713.83928571428567"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="na8-fR-KUL">
+            <objects>
+                <viewController id="g0r-3K-axa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6bs-V8-xrx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-wC-cIj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cgH-0g-XnW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tcP-qS-kqv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5h-Xn-LfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1272.4637681159422" y="2284.8214285714284"/>
+        </scene>
         <!--Feed-->
         <scene sceneID="582-9o-oa3">
             <objects>
@@ -400,7 +423,7 @@
                                                         <constraint firstAttribute="height" constant="80" id="hLi-fL-f85"/>
                                                     </constraints>
                                                     <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="oX6-MC-Zcy" appends="YES" id="e6D-3x-lSx"/>
+                                                        <outletCollection property="gestureRecognizers" destination="ej3-8I-SGX" appends="YES" id="hWe-Eb-W1a"/>
                                                     </connections>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxz-dy-KY4">
@@ -449,6 +472,7 @@
                                                 <constraint firstItem="U09-AK-cSH" firstAttribute="top" secondItem="Wtx-sI-PGg" secondAttribute="bottom" constant="52.5" id="zgV-7G-Tua"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <gestureRecognizers/>
                                         <connections>
                                             <outlet property="likeButton" destination="U09-AK-cSH" id="Sfm-8f-dFL"/>
                                             <outlet property="likesLabel" destination="i6v-jm-lfS" id="2ck-9R-byT"/>
@@ -532,7 +556,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSN-V4-zEK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="oX6-MC-Zcy"/>
+                <tapGestureRecognizer id="ej3-8I-SGX">
+                    <connections>
+                        <segue destination="g0r-3K-axa" kind="show" id="bg3-fC-XNZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1272.4637681159422" y="1467.8571428571429"/>
         </scene>
