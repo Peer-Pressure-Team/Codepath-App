@@ -6,10 +6,24 @@
 //
 
 import UIKit
+import Parse
 
 class AddStatusViewController: UIViewController {
     @IBAction func onSubmit(_ sender: Any) {
-        let status = statusTextView.text
+        let status = PFObject(className: "Status")
+        
+        status["progressUpdate"] = statusTextView.text!
+        status["user"] = PFUser.current()!
+        status["likesCount"] = 0
+        
+        status.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved status")
+            } else {
+                print("Could not submit status: \(String(describing: error?.localizedDescription))")
+            }
+        }
     }
     
     @IBOutlet weak var statusTextView: UITextView!

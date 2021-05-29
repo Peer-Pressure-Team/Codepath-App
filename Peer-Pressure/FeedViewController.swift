@@ -95,6 +95,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             cell.profileImageView.af.setImage(withURL: url)
             
+            cell.statusId = status.objectId!
+            
+            let numLikes = status["likesCount"] as! Int
+            let likesText = String(numLikes) + " likes"
+            
+            cell.likesLabel.text = likesText
+            
             return cell
             
         } else if indexPath.row <= comments.count {
