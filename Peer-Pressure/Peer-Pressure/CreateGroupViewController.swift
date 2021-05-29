@@ -29,7 +29,7 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         let group = PFObject(className: "Group")
         
         group["groupName"] = groupName.text!
-        //group["author"] = PFUser.current()!
+        //group["username"] = PFUser.current()!
         
         let imageData = groupPicture.image!.pngData()
         let file = PFFileObject(name: "image.png", data: imageData!)

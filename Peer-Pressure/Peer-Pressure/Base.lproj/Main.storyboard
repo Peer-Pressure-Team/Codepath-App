@@ -92,6 +92,7 @@
                                     <outlet property="groupImage" destination="MGQ-cW-NWa" id="qbY-5z-Kh1"/>
                                     <outlet property="groupMemberCount" destination="Dco-Zx-CX9" id="imh-p6-cN6"/>
                                     <outlet property="groupName" destination="O2H-mC-deV" id="D6C-Ko-yyo"/>
+                                    <segue destination="lOX-aS-5sZ" kind="show" identifier="SegueGroupScreen" id="vnp-VZ-9do"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -177,7 +178,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2407.2463768115945" y="1435.7142857142856"/>
+            <point key="canvasLocation" x="1926" y="1442"/>
         </scene>
         <!--Profile-->
         <scene sceneID="uvz-t3-ubU">
@@ -525,6 +526,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Anr-9F-Frk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1490" y="714"/>
+        </scene>
+        <!--Group Screen View Controller-->
+        <scene sceneID="Y7U-20-E1a">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="lOX-aS-5sZ" customClass="GroupScreenViewController" customModule="Peer_Pressure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kbv-Bu-mZG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7OO-i4-FcG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4R4-8o-3Lu"/>
+                    <connections>
+                        <outlet property="navBar" destination="4R4-8o-3Lu" id="3EV-Pm-RWj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRS-ww-976" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2907" y="1442"/>
         </scene>
     </scenes>
     <resources>

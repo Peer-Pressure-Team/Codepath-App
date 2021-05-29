@@ -72,4 +72,21 @@ class GroupViewController: UITableViewController {
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if (segue.identifier == "SegueGroupScreen") {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)!
+
+            let group = groups[indexPath.row]
+
+            let groupScreenViewController = segue.destination as! GroupScreenViewController
+
+            groupScreenViewController.group = group
+       
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+   }
+    
 }
