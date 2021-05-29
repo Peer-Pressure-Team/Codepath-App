@@ -24,6 +24,7 @@
 		47D2D25358B078AFA96D49C0 /* Pods_Peer_Pressure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD6B729EF3EB89987A98B2B /* Pods_Peer_Pressure.framework */; };
 		A9F77B8054F0B8E482D6B8EA /* Pods_Peer_Pressure_Peer_PressureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCA3464B21E116AFCFC8225 /* Pods_Peer_Pressure_Peer_PressureUITests.framework */; };
 		B76EDFE72658F65E00386DBA /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76EDFE62658F65E00386DBA /* GroupViewController.swift */; };
+		B77F50FA2662216000BE44D8 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F50F92662216000BE44D8 /* CreateGroupViewController.swift */; };
 		E8A368E5D9EEED50821238A2 /* Pods_Peer_PressureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A6B58F875B47140D61830 /* Pods_Peer_PressureTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		9873FE7130F65EAF87D8A9F7 /* Pods-Peer-Pressure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure.debug.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure/Pods-Peer-Pressure.debug.xcconfig"; sourceTree = "<group>"; };
 		AFBDE2645975F8CFEB6B95BD /* Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B76EDFE62658F65E00386DBA /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		B77F50F92662216000BE44D8 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		CEDFD929B787D371EB45872E /* Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 				073E520F265367F800934C75 /* GroupCell.swift */,
 				073E521426536B1C00934C75 /* LoginViewController.swift */,
 				B76EDFE62658F65E00386DBA /* GroupViewController.swift */,
+				B77F50F92662216000BE44D8 /* CreateGroupViewController.swift */,
 			);
 			path = "Peer-Pressure";
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */,
 				073E520B2653641800934C75 /* HabbitCell.swift in Sources */,
 				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,
+				B77F50FA2662216000BE44D8 /* CreateGroupViewController.swift in Sources */,
 				073E521526536B1C00934C75 /* LoginViewController.swift in Sources */,
 				072A3C042650420100F42365 /* SceneDelegate.swift in Sources */,
 			);
