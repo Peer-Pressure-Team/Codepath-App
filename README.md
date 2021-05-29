@@ -32,19 +32,19 @@ We are the "PEER PRESSURE TEAM" now!!!
 
 **Required Must-have Stories**
 
-* Individual user's habit page/profile
-* Adjust habits in settings
-* Feed showing other people's habits
-* React to other people's progress
+[x] Individual user's habit page/profile
+[x] Adjust habits in settings
+[x] Feed showing other people's status/habits
+[x] React to other people's progress
 
 **Optional Nice-to-have Stories**
 
-* Visually display habit progress
-* Share on social media platforms
-* Find users with similar goals
-* Search for groups or create a group
-* Challenge other users to complete a goal or form a habit
-* Privacy settings
+[] Visually display habit progress
+[] Share on social media platforms
+[] Find users with similar goals
+[x] Search for groups or create a group
+[] Challenge other users to complete a goal or form a habit
+[] Privacy settings
 
 ### 2. Screen Archetypes
 
@@ -145,7 +145,7 @@ We are the "PEER PRESSURE TEAM" now!!!
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen
-      - (Read/GET) Query all status where user and their friends are the authors
+      - (Read/GET) Query all status
          ```swift
          let query = PFQuery(className:"Post")
          query.whereKey("author", equalTo: currentUser)
@@ -162,7 +162,6 @@ We are the "PEER PRESSURE TEAM" now!!!
       - (Create/POST) Create a new like on a status
       - (Delete) Delete existing like
       - (Create/POST) Create a new reply on a status
-      - (Delete) Delete existing reply
    - Progress Update Screen
       - (Create/POST) Create a new Status object
    - Individual Profile Screen
@@ -174,7 +173,6 @@ We are the "PEER PRESSURE TEAM" now!!!
       - (Update/PUT) Update publicity
       - (Update/PUT) Update the profile image
       - (Read/GET) Query all status the user have posted
-      - (Read/GET) Query all the friends the user is following
    - My Groups Screen
       - (Read/GET) Query all groups the user have joined
    - Group Details Screen
@@ -193,7 +191,3 @@ We are the "PEER PRESSURE TEAM" now!!!
 
 ### Models
 [Add table of models]
-### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
