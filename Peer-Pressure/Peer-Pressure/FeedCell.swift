@@ -38,6 +38,7 @@ class FeedCell: UITableViewCell {
                             print("Could not update: \(String(describing: error?.localizedDescription))")
                         }
                     }
+                    self.likesLabel.text = String(numLikes + 1) + String(" likes")
                 }
                 else {
                     //unlike
@@ -52,6 +53,7 @@ class FeedCell: UITableViewCell {
                             print("Could not update: \(String(describing: error?.localizedDescription))")
                         }
                     }
+                    self.likesLabel.text = String(numLikes - 1) + String(" likes")
                 }
                 
             } else {

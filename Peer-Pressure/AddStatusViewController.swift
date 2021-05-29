@@ -18,6 +18,8 @@ class AddStatusViewController: UIViewController {
         
         status.saveInBackground { (success, error) in
             if success {
+                self.navigationController?.popViewController(animated: true)
+
                 self.dismiss(animated: true, completion: nil)
                 print("Saved status")
             } else {

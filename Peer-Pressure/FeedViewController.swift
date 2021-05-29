@@ -101,6 +101,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let likesText = String(numLikes) + " likes"
             
             cell.likesLabel.text = likesText
+            cell.profileImageView.translatesAutoresizingMaskIntoConstraints = false
             
             return cell
             
@@ -234,7 +235,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let status = statuses[indexPath.section]
         let comments = (status["comments"] as? [PFObject]) ?? []
-        
         if indexPath.row == comments.count + 1 {
             //show comment bar
             showsCommentBar = true

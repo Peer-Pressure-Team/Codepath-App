@@ -9,7 +9,18 @@ import UIKit
 import Parse
 
 class FeedProfileViewController: UIViewController {
-
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    
+    
+    
+    @IBOutlet weak var myStackView: UIStackView!
+    @IBOutlet weak var habitTableView: UITableView!
+    @IBOutlet weak var groupTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
