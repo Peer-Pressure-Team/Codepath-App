@@ -12,9 +12,6 @@ import AlamofireImage
 class GroupScreenViewController: UIViewController {
 
     
-    @IBAction func onBackButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
     @IBOutlet weak var navBar: UINavigationItem!
     
     var group = PFObject(className: "Group")
@@ -26,5 +23,14 @@ class GroupScreenViewController: UIViewController {
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "GroupSettingsSegue") {
+            let groupTitle = group["groupName"] as! String
+            
+            let groupSettingsViewController = segue.destination as! GroupSettingsViewController
 
+            groupSettingsViewController.groupTitle = groupTitle
+        }
+    }
+    
 }

@@ -26,6 +26,7 @@
 		B76EDFE72658F65E00386DBA /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76EDFE62658F65E00386DBA /* GroupViewController.swift */; };
 		B77F50FA2662216000BE44D8 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F50F92662216000BE44D8 /* CreateGroupViewController.swift */; };
 		B77F50FC266273DF00BE44D8 /* GroupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F50FB266273DF00BE44D8 /* GroupScreenViewController.swift */; };
+		B77F50FE2662974200BE44D8 /* GroupSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F50FD2662974200BE44D8 /* GroupSettingsViewController.swift */; };
 		E8A368E5D9EEED50821238A2 /* Pods_Peer_PressureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A6B58F875B47140D61830 /* Pods_Peer_PressureTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		B76EDFE62658F65E00386DBA /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		B77F50F92662216000BE44D8 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
 		B77F50FB266273DF00BE44D8 /* GroupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupScreenViewController.swift; sourceTree = "<group>"; };
+		B77F50FD2662974200BE44D8 /* GroupSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSettingsViewController.swift; sourceTree = "<group>"; };
 		CEDFD929B787D371EB45872E /* Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				B76EDFE62658F65E00386DBA /* GroupViewController.swift */,
 				B77F50F92662216000BE44D8 /* CreateGroupViewController.swift */,
 				B77F50FB266273DF00BE44D8 /* GroupScreenViewController.swift */,
+				B77F50FD2662974200BE44D8 /* GroupSettingsViewController.swift */,
 			);
 			path = "Peer-Pressure";
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				072A3C022650420100F42365 /* AppDelegate.swift in Sources */,
 				072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */,
 				B76EDFE72658F65E00386DBA /* GroupViewController.swift in Sources */,
+				B77F50FE2662974200BE44D8 /* GroupSettingsViewController.swift in Sources */,
 				072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */,
 				073E520B2653641800934C75 /* HabbitCell.swift in Sources */,
 				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,

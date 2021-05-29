@@ -56,7 +56,7 @@ class GroupViewController: UITableViewController {
         
         cell.groupName.text = group["groupName"] as! String
         
-        cell.groupMemberCount.text = group["memberCount"] as? String
+        cell.groupMemberCount.text =
         
         let imageFile = group["image"] as! PFFileObject
         let urlString = imageFile.url!
