@@ -33,6 +33,7 @@ class GroupViewController: UITableViewController {
         query.findObjectsInBackground { (groups, error) in
             if groups != nil {
                 self.groups = groups!
+                print("This")
                 self.groupTableView.reloadData()
             }
         }

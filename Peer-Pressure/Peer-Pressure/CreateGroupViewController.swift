@@ -26,6 +26,7 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
     }
     
     @IBAction func onCreateButton(_ sender: Any) {
+        // Creates group
         let group = PFObject(className: "Group")
         
         group["groupName"] = groupName.text!
@@ -38,12 +39,18 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         
         group.saveInBackground { (success, error) in
             if success {
+                // Refreshes original view controller. Too slow
+                let parentVC = self.presentingViewController as? GroupViewController
+                parentVC?.groupTableView.reloadData()
                 self.dismiss(animated: true, completion: nil)
                 print("Saved")
             } else {
                 print("error!")
             }
         }
+    
+        // Creates habit
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -53,7 +60,9 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         let scaledImage = image.af.imageScaled(to: size)
         
         groupPicture.image = scaledImage
+        
         dismiss(animated: true, completion: nil)
+        
     }
     
     override func viewDidLoad() {
@@ -65,4 +74,5 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         groupPicture.layer.cornerRadius = groupPicture.frame.height/2
         groupPicture.clipsToBounds = true
     }
+    
 }
