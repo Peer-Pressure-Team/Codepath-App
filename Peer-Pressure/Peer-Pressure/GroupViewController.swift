@@ -54,7 +54,7 @@ class GroupViewController: UITableViewController {
         
         let group = groups[indexPath.row]
         
-        cell.groupName.text = group["groupName"] as! String
+        cell.groupName.text = (group["groupName"] as! String)
         
         cell.groupMemberCount.text! = "Group Members: \(group["memberCount"] ?? "" )"
         

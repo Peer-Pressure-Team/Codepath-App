@@ -50,7 +50,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
             print(group["groupName"]!)
             let cell: GroupCell = self.groupTableView.dequeueReusableCell(withIdentifier:"GroupCell", for: indexPath) as! GroupCell
             cell.groupName?.text = group["groupName"] as? String
-            cell.memberCount?.text = "\(group["memberCount"]!)"
+            cell.groupMemberCount?.text = "\(group["memberCount"]!)"
 
             //let imageFile = group["image"] as! PFFileObject
             
@@ -65,7 +65,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                     let image = UIImage(data: imageData!)
                     cell.groupImage?.image = image
                   } else {
-                    print("error getting image: \(error)")
+                    print("error getting image: \(String(describing: error))")
                   }
                }
             }
@@ -128,7 +128,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                             print("habbits: \(self.habits.count)")
                             self.habbitTableView.reloadData()
                         } else {
-                            print("error in finding habbits: \(error)")
+                            print("error in finding habbits: \(String(describing: error))")
                         }
                     }
     }
@@ -151,7 +151,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                             self.locationLabel.text = (user?["location"] as! String)
 
                         } else {
-                            print("error in finding usersetting: \(error)")
+                            print("error in finding usersetting: \(String(describing: error))")
                         }
         }
         let useravatar = user["image"] as? PFFileObject
@@ -176,7 +176,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                             print("habbits: \(self.habits.count)")
                             self.habbitTableView.reloadData()
                         } else {
-                            print("error in finding habbits: \(error)")
+                            print("error in finding habbits: \(String(describing: error))")
                         }
                     }
         
@@ -189,7 +189,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                             self.groups = groups!
                             self.groupTableView.reloadData()
                         } else {
-                            print("error in finding groups: \(error)")
+                            print("error in finding groups: \(String(describing: error))")
                         }
                     }
     }
@@ -211,7 +211,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                             self.locationLabel.text = (user?["location"] as! String)
 
                         } else {
-                            print("error in finding usersetting: \(error)")
+                            print("error in finding usersetting: \(String(describing: error))")
                         }
         }
         let useravatar = user["image"] as? PFFileObject
@@ -236,7 +236,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                             print("habbits: \(self.habits.count)")
                             self.habbitTableView.reloadData()
                         } else {
-                            print("error in finding habbits: \(error)")
+                            print("error in finding habbits: \(String(describing: error))")
                         }
                     }
         
@@ -249,7 +249,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
                             self.groups = groups!
                             self.groupTableView.reloadData()
                         } else {
-                            print("error in finding groups: \(error)")
+                            print("error in finding groups: \(String(describing: error))")
                         }
                     }
     }
