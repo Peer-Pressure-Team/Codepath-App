@@ -34,11 +34,22 @@ class LoginViewController: UIViewController {
         user.signUpInBackground { (success, error) in
             if success {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
-        
+        var parseObject = PFObject(className:"UserSetting")
+        parseObject["username"] = user.username
+        // Saves the new object.
+        parseObject.saveInBackground {
+          (success: Bool, error: Error?) in
+          if (success) {
+            print("UserSetting saved: \(user.username)")
+          } else {
+            print("Error saving UserSetting: \(user.username)")
+          }
+        }
 
     }
     

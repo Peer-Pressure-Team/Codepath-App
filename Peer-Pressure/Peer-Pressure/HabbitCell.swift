@@ -9,7 +9,8 @@ import UIKit
 
 class HabbitCell: UITableViewCell {
 
-    @IBOutlet weak var habbitLabel: UILabel!
+
+    @IBOutlet weak var habitLabel: UILabel!
     @IBOutlet weak var actualCount: UILabel!
     @IBOutlet weak var goalCount: UILabel!
     
