@@ -1,10 +1,3 @@
-//
-//  LoginViewController.swift
-//  Peer-Pressure
-//
-//  Created by qiru hu on 5/17/21.
-//
-
 import UIKit
 import Parse
 
