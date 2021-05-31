@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,16 @@
 		072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3926504B4900F42365 /* ExploreViewController.swift */; };
 		072A3C3F26504B6000F42365 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C3E26504B6000F42365 /* GroupViewController.swift */; };
 		072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A3C4326504B7100F42365 /* ProfileViewController.swift */; };
+		073E520B2653641800934C75 /* HabbitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E520A2653641800934C75 /* HabbitCell.swift */; };
+		073E5210265367F800934C75 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E520F265367F800934C75 /* GroupCell.swift */; };
+		073E521526536B1C00934C75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E521426536B1C00934C75 /* LoginViewController.swift */; };
+		3A0AA0C92662BBC4000D401D /* FeedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AA0C82662BBC4000D401D /* FeedProfileViewController.swift */; };
+		3A90C4A4265053A600906EDF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90C4A3265053A600906EDF /* FeedCell.swift */; };
+		3A92A74C2658B64F00600D97 /* AddStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92A74B2658B64F00600D97 /* AddStatusViewController.swift */; };
+		3A92A7542658C18000600D97 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92A7532658C18000600D97 /* CommentCell.swift */; };
+		47D2D25358B078AFA96D49C0 /* Pods_Peer_Pressure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD6B729EF3EB89987A98B2B /* Pods_Peer_Pressure.framework */; };
+		A9F77B8054F0B8E482D6B8EA /* Pods_Peer_Pressure_Peer_PressureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCA3464B21E116AFCFC8225 /* Pods_Peer_Pressure_Peer_PressureUITests.framework */; };
+		E8A368E5D9EEED50821238A2 /* Pods_Peer_PressureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369A6B58F875B47140D61830 /* Pods_Peer_PressureTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011AA51BE3618ACFA6D21AED /* Pods-Peer-Pressure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure.release.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure/Pods-Peer-Pressure.release.xcconfig"; sourceTree = "<group>"; };
 		072A3BFE2650420100F42365 /* Peer-Pressure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peer-Pressure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		072A3C012650420100F42365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		072A3C032650420100F42365 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +68,21 @@
 		072A3C3926504B4900F42365 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		072A3C3E26504B6000F42365 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		072A3C4326504B7100F42365 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		073E520A2653641800934C75 /* HabbitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabbitCell.swift; sourceTree = "<group>"; };
+		073E520F265367F800934C75 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		073E521426536B1C00934C75 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		369A6B58F875B47140D61830 /* Pods_Peer_PressureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peer_PressureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0AA0C82662BBC4000D401D /* FeedProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedProfileViewController.swift; sourceTree = "<group>"; };
+		3A90C4A3265053A600906EDF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		3A92A74B2658B64F00600D97 /* AddStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStatusViewController.swift; sourceTree = "<group>"; };
+		3A92A7532658C18000600D97 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		4CCA3464B21E116AFCFC8225 /* Pods_Peer_Pressure_Peer_PressureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peer_Pressure_Peer_PressureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51228B3D46025823FE5231EF /* Pods-Peer-PressureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-PressureTests.debug.xcconfig"; path = "Target Support Files/Pods-Peer-PressureTests/Pods-Peer-PressureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		73DA0D459B9992E33F78F0A5 /* Pods-Peer-PressureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-PressureTests.release.xcconfig"; path = "Target Support Files/Pods-Peer-PressureTests/Pods-Peer-PressureTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AD6B729EF3EB89987A98B2B /* Pods_Peer_Pressure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peer_Pressure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9873FE7130F65EAF87D8A9F7 /* Pods-Peer-Pressure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure.debug.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure/Pods-Peer-Pressure.debug.xcconfig"; sourceTree = "<group>"; };
+		AFBDE2645975F8CFEB6B95BD /* Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEDFD929B787D371EB45872E /* Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; path = "Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D2D25358B078AFA96D49C0 /* Pods_Peer_Pressure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A368E5D9EEED50821238A2 /* Pods_Peer_PressureTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F77B8054F0B8E482D6B8EA /* Pods_Peer_Pressure_Peer_PressureUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +116,8 @@
 		072A3BF52650420100F42365 = {
 			isa = PBXGroup;
 			children = (
+				3A92A7532658C18000600D97 /* CommentCell.swift */,
+				3A92A74B2658B64F00600D97 /* AddStatusViewController.swift */,
 				072A3C4326504B7100F42365 /* ProfileViewController.swift */,
 				072A3C3E26504B6000F42365 /* GroupViewController.swift */,
 				072A3C3926504B4900F42365 /* ExploreViewController.swift */,
@@ -95,6 +126,8 @@
 				072A3C172650420400F42365 /* Peer-PressureTests */,
 				072A3C222650420400F42365 /* Peer-PressureUITests */,
 				072A3BFF2650420100F42365 /* Products */,
+				08F99FFB52F72AE2014ADC39 /* Pods */,
+				C9D629965AFA586B636E9934 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +151,11 @@
 				072A3C0A2650420400F42365 /* Assets.xcassets */,
 				072A3C0C2650420400F42365 /* LaunchScreen.storyboard */,
 				072A3C0F2650420400F42365 /* Info.plist */,
+				073E520A2653641800934C75 /* HabbitCell.swift */,
+				073E520F265367F800934C75 /* GroupCell.swift */,
+				073E521426536B1C00934C75 /* LoginViewController.swift */,
+				3A90C4A3265053A600906EDF /* FeedCell.swift */,
+				3A0AA0C82662BBC4000D401D /* FeedProfileViewController.swift */,
 			);
 			path = "Peer-Pressure";
 			sourceTree = "<group>";
@@ -140,6 +178,29 @@
 			path = "Peer-PressureUITests";
 			sourceTree = "<group>";
 		};
+		08F99FFB52F72AE2014ADC39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9873FE7130F65EAF87D8A9F7 /* Pods-Peer-Pressure.debug.xcconfig */,
+				011AA51BE3618ACFA6D21AED /* Pods-Peer-Pressure.release.xcconfig */,
+				AFBDE2645975F8CFEB6B95BD /* Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig */,
+				CEDFD929B787D371EB45872E /* Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig */,
+				51228B3D46025823FE5231EF /* Pods-Peer-PressureTests.debug.xcconfig */,
+				73DA0D459B9992E33F78F0A5 /* Pods-Peer-PressureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9D629965AFA586B636E9934 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AD6B729EF3EB89987A98B2B /* Pods_Peer_Pressure.framework */,
+				4CCA3464B21E116AFCFC8225 /* Pods_Peer_Pressure_Peer_PressureUITests.framework */,
+				369A6B58F875B47140D61830 /* Pods_Peer_PressureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 072A3C282650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-Pressure" */;
 			buildPhases = (
+				FE159727E02E237579B3EEDF /* [CP] Check Pods Manifest.lock */,
 				072A3BFA2650420100F42365 /* Sources */,
 				072A3BFB2650420100F42365 /* Frameworks */,
 				072A3BFC2650420100F42365 /* Resources */,
+				33873C5A4546B77BA04A1567 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 072A3C2B2650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-PressureTests" */;
 			buildPhases = (
+				6C80CEC1A5404CAC6DD5CBF6 /* [CP] Check Pods Manifest.lock */,
 				072A3C102650420400F42365 /* Sources */,
 				072A3C112650420400F42365 /* Frameworks */,
 				072A3C122650420400F42365 /* Resources */,
@@ -182,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 072A3C2E2650420400F42365 /* Build configuration list for PBXNativeTarget "Peer-PressureUITests" */;
 			buildPhases = (
+				6BD4F18146F56E4D5F226DEA /* [CP] Check Pods Manifest.lock */,
 				072A3C1B2650420400F42365 /* Sources */,
 				072A3C1C2650420400F42365 /* Frameworks */,
 				072A3C1D2650420400F42365 /* Resources */,
+				71AFB731D1FAD42368C62BE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,17 +331,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33873C5A4546B77BA04A1567 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peer-Pressure/Pods-Peer-Pressure-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peer-Pressure/Pods-Peer-Pressure-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Peer-Pressure/Pods-Peer-Pressure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BD4F18146F56E4D5F226DEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peer-Pressure-Peer-PressureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C80CEC1A5404CAC6DD5CBF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peer-PressureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71AFB731D1FAD42368C62BE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Peer-Pressure-Peer-PressureUITests/Pods-Peer-Pressure-Peer-PressureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE159727E02E237579B3EEDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peer-Pressure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		072A3BFA2650420100F42365 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073E5210265367F800934C75 /* GroupCell.swift in Sources */,
 				072A3C3F26504B6000F42365 /* GroupViewController.swift in Sources */,
 				072A3C062650420100F42365 /* ViewController.swift in Sources */,
 				072A3C022650420100F42365 /* AppDelegate.swift in Sources */,
+				3A0AA0C92662BBC4000D401D /* FeedProfileViewController.swift in Sources */,
 				072A3C3A26504B4900F42365 /* ExploreViewController.swift in Sources */,
 				072A3C4426504B7100F42365 /* ProfileViewController.swift in Sources */,
+				073E520B2653641800934C75 /* HabbitCell.swift in Sources */,
+				3A92A7542658C18000600D97 /* CommentCell.swift in Sources */,
+				3A90C4A4265053A600906EDF /* FeedCell.swift in Sources */,
+				3A92A74C2658B64F00600D97 /* AddStatusViewController.swift in Sources */,
 				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,
+				073E521526536B1C00934C75 /* LoginViewController.swift in Sources */,
 				072A3C042650420100F42365 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +625,7 @@
 		};
 		072A3C292650420400F42365 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9873FE7130F65EAF87D8A9F7 /* Pods-Peer-Pressure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,6 +645,7 @@
 		};
 		072A3C2A2650420400F42365 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011AA51BE3618ACFA6D21AED /* Pods-Peer-Pressure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,6 +665,7 @@
 		};
 		072A3C2C2650420400F42365 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51228B3D46025823FE5231EF /* Pods-Peer-PressureTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +688,7 @@
 		};
 		072A3C2D2650420400F42365 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DA0D459B9992E33F78F0A5 /* Pods-Peer-PressureTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,6 +711,7 @@
 		};
 		072A3C2F2650420400F42365 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBDE2645975F8CFEB6B95BD /* Pods-Peer-Pressure-Peer-PressureUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +732,7 @@
 		};
 		072A3C302650420400F42365 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEDFD929B787D371EB45872E /* Pods-Peer-Pressure-Peer-PressureUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
