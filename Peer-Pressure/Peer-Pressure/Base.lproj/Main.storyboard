@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I4x-C0-LwM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I4x-C0-LwM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="z7y-At-dJy">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z7y-At-dJy" id="uGU-vL-ji7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
@@ -45,7 +45,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="32P-Hb-xEd">
-                                        <rect key="frame" x="0.0" y="65.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="62" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="32P-Hb-xEd" id="1Kb-Fo-9kN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -196,7 +196,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FeedCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="141" id="2g8-ae-mle" customClass="FeedCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="141"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="141"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2g8-ae-mle" id="aUo-J7-hp2">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
@@ -279,7 +279,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CommentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" id="3KS-VK-0RW" customClass="CommentCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="169" width="414" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="165.5" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3KS-VK-0RW" id="TIg-2s-NtJ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
@@ -314,7 +314,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="b1L-4F-LCI">
-                                        <rect key="frame" x="0.0" y="206.5" width="414" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="203" width="414" height="37.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b1L-4F-LCI" id="tAM-4O-wvW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
@@ -417,7 +417,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabbitCell" rowHeight="85" id="RaP-Qr-w7j" customClass="HabbitCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="85"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="85"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RaP-Qr-w7j" id="Qc2-nX-r7C">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
@@ -490,7 +490,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="98" id="ulc-7h-ov3" customClass="GroupCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="98"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="98"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ulc-7h-ov3" id="chf-FJ-pOA">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
@@ -592,7 +592,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="110" id="nq2-VO-Q9k" customClass="GroupCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="110"/>
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nq2-VO-Q9k" id="TKH-Vr-8q7">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -653,6 +653,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="groupGoal" destination="GbC-eQ-j5k" id="vfE-tm-6FK"/>
                                     <outlet property="groupImage" destination="3pV-My-zgL" id="Na0-uA-gEH"/>
                                     <outlet property="groupMemberCount" destination="AJ2-7K-edI" id="vAo-lQ-gnR"/>
                                     <outlet property="groupName" destination="rNh-Qd-5d6" id="Ipx-CO-0Ju"/>
@@ -739,6 +740,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Period:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GN-1x-Rsx">
+                                <rect key="frame" x="20" y="369" width="217" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="WLi-z4-ThE">
+                                <rect key="frame" x="20" y="400" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Daily"/>
+                                    <segment title="Weekly"/>
+                                    <segment title="Monthly"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZT-v0-0h6">
+                                <rect key="frame" x="20" y="512" width="105" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Frequency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udn-OK-DNv">
+                                <rect key="frame" x="146" y="519" width="81" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Frequency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLB-1B-PdI">
+                                <rect key="frame" x="20" y="481" width="217" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UiU-R9-ynv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -746,6 +783,9 @@
                     <connections>
                         <outlet property="groupName" destination="imp-EM-ybU" id="TtH-3a-BQa"/>
                         <outlet property="groupPicture" destination="FK3-S4-mdy" id="2v5-L4-Tn0"/>
+                        <outlet property="habitFrequency" destination="bZT-v0-0h6" id="sbz-Vg-EHz"/>
+                        <outlet property="habitName" destination="HsC-iS-2WH" id="J9I-7L-7dN"/>
+                        <outlet property="habitPeriodSegment" destination="WLi-z4-ThE" id="KHI-sj-szT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7wV-hi-814" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -755,7 +795,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1906" y="2184"/>
+            <point key="canvasLocation" x="1905.7971014492755" y="2183.0357142857142"/>
         </scene>
         <!--Group-->
         <scene sceneID="Sz5-dM-tUW">
@@ -831,7 +871,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" id="W4V-YJ-Zbk" customClass="GroupCell" customModule="Peer_Pressure" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="107.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="107.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W4V-YJ-Zbk" id="YjR-te-eHC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="107.5"/>
@@ -895,8 +935,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="groupImage" destination="PLl-yT-656" id="PMm-JF-gkb"/>
+                                            <outlet property="groupMemberCount" destination="XOz-Be-5nd" id="ctj-JJ-NZN"/>
                                             <outlet property="groupName" destination="D31-ip-ZsW" id="MrW-ay-hif"/>
-                                            <outlet property="memberCount" destination="XOz-Be-5nd" id="TuS-71-Skt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -909,7 +949,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HabbitCell" id="1vI-7g-fMK" customClass="HabbitCell" customModule="Peer_Pressure">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="70.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1vI-7g-fMK" id="V1h-iD-Jyi">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>

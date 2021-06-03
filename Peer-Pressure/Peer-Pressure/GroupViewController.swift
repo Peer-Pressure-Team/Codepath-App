@@ -11,7 +11,7 @@ import AlamofireImage
 
 class GroupViewController: UITableViewController {
 
-    var groups = [PFObject]() 
+    var groups = [PFObject]()
     
     @IBOutlet var groupTableView: UITableView!
     
@@ -26,8 +26,9 @@ class GroupViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        
         let query = PFQuery(className: "Group")
-        //query.includeKey("author")
+        query.whereKey("members", equalTo: PFUser.current())
         query.limit = 20
         
         query.findObjectsInBackground { (groups, error) in
@@ -53,11 +54,15 @@ class GroupViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell") as! GroupCell
         
         let group = groups[indexPath.row]
+        var toHabit = group["habitPointer"] as! PFObject
+        let firstQuery = PFQuery(className: "GroupHabit")
+
+        let groupHabit = try? firstQuery.getObjectWithId(toHabit.objectId!)
+        
         
         cell.groupName.text = (group["groupName"] as! String)
-        
         cell.groupMemberCount.text! = "Group Members: \(group["memberCount"] ?? "" )"
-        
+        cell.groupGoal.text = groupHabit?["habitName"] as! String
         let imageFile = group["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
