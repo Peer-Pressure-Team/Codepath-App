@@ -18,8 +18,9 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
     
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var habbitTableView: UITableView!
-    
     @IBOutlet weak var groupTableView: UITableView!
+    
+
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var userimage: UIImageView!
     
@@ -49,8 +50,8 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
             let group = groups[indexPath.section]
             print(group["groupName"]!)
             let cell: GroupCell = self.groupTableView.dequeueReusableCell(withIdentifier:"GroupCell", for: indexPath) as! GroupCell
-            cell.groupName?.text = group["groupName"] as? String
-            cell.groupMemberCount?.text = "\(group["memberCount"]!)"
+            cell.groupName.text = group["groupName"] as? String
+            cell.groupMemberCount.text! = "\(group["memberCount"] ?? "1" )"
 
             //let imageFile = group["image"] as! PFFileObject
             
