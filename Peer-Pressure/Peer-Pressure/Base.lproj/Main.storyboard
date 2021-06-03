@@ -52,6 +52,74 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" rowHeight="110" id="AsZ-Y3-Q6J" customClass="GroupCell" customModule="Peer_Pressure" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="105.5" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AsZ-Y3-Q6J" id="I54-fw-WX8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fyO-ab-SV9">
+                                                    <rect key="frame" x="7" y="4" width="100" height="102"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="Mo2-6f-j3o"/>
+                                                        <constraint firstAttribute="height" constant="102" id="fzd-4s-oZZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3q-qr-dmH">
+                                                    <rect key="frame" x="115" y="11" width="117.5" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="1Su-Xs-Waq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Members: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTw-8l-bDD">
+                                                    <rect key="frame" x="115" y="43" width="139.5" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="fxH-5e-lCs"/>
+                                                        <constraint firstAttribute="height" constant="22" id="va3-O4-M4e"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThN-fk-YKy">
+                                                    <rect key="frame" x="115" y="73" width="91" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="FMs-yP-tFy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ThN-fk-YKy" firstAttribute="leading" secondItem="fyO-ab-SV9" secondAttribute="trailing" constant="8" symbolic="YES" id="27g-59-bez"/>
+                                                <constraint firstItem="fyO-ab-SV9" firstAttribute="centerY" secondItem="I54-fw-WX8" secondAttribute="centerY" id="CjC-KP-2rH"/>
+                                                <constraint firstItem="ThN-fk-YKy" firstAttribute="top" secondItem="vTw-8l-bDD" secondAttribute="bottom" constant="8" symbolic="YES" id="Jhh-3h-BEc"/>
+                                                <constraint firstItem="vTw-8l-bDD" firstAttribute="top" secondItem="t3q-qr-dmH" secondAttribute="bottom" constant="8" symbolic="YES" id="LRM-k2-Q1e"/>
+                                                <constraint firstItem="vTw-8l-bDD" firstAttribute="top" secondItem="t3q-qr-dmH" secondAttribute="bottom" constant="8" symbolic="YES" id="OgJ-RF-aQE"/>
+                                                <constraint firstItem="ThN-fk-YKy" firstAttribute="top" secondItem="vTw-8l-bDD" secondAttribute="bottom" constant="8" symbolic="YES" id="Pn8-Vh-d8b"/>
+                                                <constraint firstItem="t3q-qr-dmH" firstAttribute="leading" secondItem="fyO-ab-SV9" secondAttribute="trailing" constant="8" symbolic="YES" id="R5C-vP-HfE"/>
+                                                <constraint firstItem="vTw-8l-bDD" firstAttribute="leading" secondItem="fyO-ab-SV9" secondAttribute="trailing" constant="8" symbolic="YES" id="RGa-ib-We6"/>
+                                                <constraint firstItem="t3q-qr-dmH" firstAttribute="top" secondItem="I54-fw-WX8" secondAttribute="topMargin" id="UFr-Zc-6SV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ThN-fk-YKy" secondAttribute="bottom" constant="4" id="bJ8-iV-fDd"/>
+                                                <constraint firstItem="ThN-fk-YKy" firstAttribute="top" secondItem="vTw-8l-bDD" secondAttribute="bottom" constant="8" symbolic="YES" id="jO9-hg-WxO"/>
+                                                <constraint firstItem="ThN-fk-YKy" firstAttribute="top" secondItem="vTw-8l-bDD" secondAttribute="bottom" constant="8" symbolic="YES" id="uNP-qd-ISo"/>
+                                                <constraint firstItem="vTw-8l-bDD" firstAttribute="top" secondItem="t3q-qr-dmH" secondAttribute="bottom" constant="8" symbolic="YES" id="ubc-Au-Qai"/>
+                                                <constraint firstItem="vTw-8l-bDD" firstAttribute="top" secondItem="t3q-qr-dmH" secondAttribute="bottom" constant="8" symbolic="YES" id="wMx-Fr-6vI"/>
+                                                <constraint firstItem="fyO-ab-SV9" firstAttribute="leading" secondItem="I54-fw-WX8" secondAttribute="leadingMargin" constant="-13" id="xtK-lL-DNz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="groupGoal" destination="ThN-fk-YKy" id="Obs-CG-Gl1"/>
+                                            <outlet property="groupImage" destination="fyO-ab-SV9" id="gLX-12-ac9"/>
+                                            <outlet property="groupMemberCount" destination="vTw-8l-bDD" id="AbX-Bh-FbY"/>
+                                            <outlet property="groupName" destination="t3q-qr-dmH" id="IYc-e2-9Ic"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -59,10 +127,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="fI7-48-wAN"/>
+                    <connections>
+                        <outlet property="groupTableView" destination="LwV-K3-VPm" id="oFh-tX-Ym0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad0-es-Psm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="1456"/>
+            <point key="canvasLocation" x="386.95652173913044" y="1455.8035714285713"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="MAe-YS-lTZ">

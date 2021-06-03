@@ -1,10 +1,3 @@
-//
-//  GroupViewController.swift
-//  Peer-Pressure
-//
-//  Created by Leonardo Valdivia on 5/22/21.
-//
-
 import UIKit
 import Parse
 import AlamofireImage
