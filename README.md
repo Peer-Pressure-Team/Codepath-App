@@ -32,19 +32,19 @@ We are the "PEER PRESSURE TEAM" now!!!
 
 **Required Must-have Stories**
 
-[x] Individual user's habit page/profile
-[x] Adjust habits in settings
-[x] Feed showing other people's status/habits
-[x] React to other people's progress
+- [x] Individual user's habit page/profile
+- [x] Adjust habits in settings
+- [x] Feed showing other people's status/habits
+- [x] React to other people's progress
 
 **Optional Nice-to-have Stories**
 
-[] Visually display habit progress
-[] Share on social media platforms
-[] Find users with similar goals
-[x] Search for groups or create a group
-[] Challenge other users to complete a goal or form a habit
-[] Privacy settings
+- [] Visually display habit progress
+- [] Share on social media platforms
+- [] Find users with similar goals
+- [x] Search for groups or create a group
+- [] Challenge other users to complete a goal or form a habit
+- [] Privacy settings
 
 ### 2. Screen Archetypes
 
