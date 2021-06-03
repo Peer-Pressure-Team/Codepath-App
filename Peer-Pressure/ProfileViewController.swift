@@ -264,6 +264,36 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         print("logout")
     }
     
+    func reloadUserInfo(){
+        var user = PFUser.current()!
+        username.text = user.username
+        
+
+        var firstQuery = PFQuery(className: "Usersetting")
+        //firstQuery.includeKeys(["location","publicity"])
+        firstQuery.whereKey("username", equalTo: user.username!)
+
+        firstQuery.getFirstObjectInBackground
+        {(user, error) in
+                        if user != nil {
+                            self.locationLabel.text = (user?["location"] as! String)
+
+                        } else {
+                            print("error in finding usersetting: \(String(describing: error))")
+                        }
+        }
+        let useravatar = user["image"] as? PFFileObject
+        useravatar?.getDataInBackground{ (imageData, error)in
+            DispatchQueue.main.async {
+              if imageData != nil, error == nil {
+                let image = UIImage(data: imageData!)
+                self.userimage.image = image
+
+              }
+           }
+        }
+    }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == self.habbitTableView {
@@ -279,6 +309,9 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         performSegue(withIdentifier: "CreateHabitSegue", sender: self)
     }
     
+    @IBAction func onSettingButton(_ sender: Any) {
+        performSegue(withIdentifier: "settingSegue", sender: self)
+    }
     /*
     // MARK: - Navigation
 

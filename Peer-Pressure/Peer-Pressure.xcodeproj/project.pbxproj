@@ -21,11 +21,12 @@
 		073E520B2653641800934C75 /* HabbitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E520A2653641800934C75 /* HabbitCell.swift */; };
 		073E5210265367F800934C75 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E520F265367F800934C75 /* GroupCell.swift */; };
 		073E521526536B1C00934C75 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E521426536B1C00934C75 /* LoginViewController.swift */; };
+		078DDC3E26696A2B000E6E63 /* ProfileSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078DDC3D26696A2B000E6E63 /* ProfileSettingViewController.swift */; };
+		07BE31FD2662B84B00E5B820 /* CreateHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE31FC2662B84A00E5B820 /* CreateHabitViewController.swift */; };
 		3A0AA0C92662BBC4000D401D /* FeedProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AA0C82662BBC4000D401D /* FeedProfileViewController.swift */; };
 		3A90C4A4265053A600906EDF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A90C4A3265053A600906EDF /* FeedCell.swift */; };
 		3A92A74C2658B64F00600D97 /* AddStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92A74B2658B64F00600D97 /* AddStatusViewController.swift */; };
 		3A92A7542658C18000600D97 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92A7532658C18000600D97 /* CommentCell.swift */; };
-		07BE31FD2662B84B00E5B820 /* CreateHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE31FC2662B84A00E5B820 /* CreateHabitViewController.swift */; };
 		47D2D25358B078AFA96D49C0 /* Pods_Peer_Pressure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD6B729EF3EB89987A98B2B /* Pods_Peer_Pressure.framework */; };
 		A9F77B8054F0B8E482D6B8EA /* Pods_Peer_Pressure_Peer_PressureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCA3464B21E116AFCFC8225 /* Pods_Peer_Pressure_Peer_PressureUITests.framework */; };
 		B76EDFE72658F65E00386DBA /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76EDFE62658F65E00386DBA /* GroupViewController.swift */; };
@@ -75,6 +76,7 @@
 		073E520A2653641800934C75 /* HabbitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabbitCell.swift; sourceTree = "<group>"; };
 		073E520F265367F800934C75 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		073E521426536B1C00934C75 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		078DDC3D26696A2B000E6E63 /* ProfileSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewController.swift; sourceTree = "<group>"; };
 		07BE31FC2662B84A00E5B820 /* CreateHabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHabitViewController.swift; sourceTree = "<group>"; };
 		369A6B58F875B47140D61830 /* Pods_Peer_PressureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peer_PressureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0AA0C82662BBC4000D401D /* FeedProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedProfileViewController.swift; sourceTree = "<group>"; };
@@ -154,9 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				072A3C012650420100F42365 /* AppDelegate.swift */,
-				072A3C4326504B7100F42365 /* ProfileViewController.swift */,
-				072A3C3926504B4900F42365 /* ExploreViewController.swift */,
-				072A3C3426504B3400F42365 /* FeedViewController.swift */,
 				072A3C032650420100F42365 /* SceneDelegate.swift */,
 				072A3C052650420100F42365 /* ViewController.swift */,
 				072A3C072650420100F42365 /* Main.storyboard */,
@@ -173,6 +172,7 @@
 				B77F50FB266273DF00BE44D8 /* GroupScreenViewController.swift */,
 				B77F50FD2662974200BE44D8 /* GroupSettingsViewController.swift */,
 				07BE31FC2662B84A00E5B820 /* CreateHabitViewController.swift */,
+				078DDC3D26696A2B000E6E63 /* ProfileSettingViewController.swift */,
 			);
 			path = "Peer-Pressure";
 			sourceTree = "<group>";
@@ -471,6 +471,7 @@
 				3A92A74C2658B64F00600D97 /* AddStatusViewController.swift in Sources */,
 				072A3C3526504B3400F42365 /* FeedViewController.swift in Sources */,
 				B77F50FA2662216000BE44D8 /* CreateGroupViewController.swift in Sources */,
+				078DDC3E26696A2B000E6E63 /* ProfileSettingViewController.swift in Sources */,
 				073E521526536B1C00934C75 /* LoginViewController.swift in Sources */,
 				B77F50FC266273DF00BE44D8 /* GroupScreenViewController.swift in Sources */,
 				072A3C042650420100F42365 /* SceneDelegate.swift in Sources */,
