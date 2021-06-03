@@ -19,6 +19,7 @@ class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Group")
+        query.whereKey("members", notEqualTo: PFUser.current())
         query.limit = 20
         
         query.findObjectsInBackground { (groups, error) in
@@ -65,8 +66,17 @@ class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.groupImage.layer.cornerRadius = cell.groupImage.frame.height/2
         cell.groupImage.clipsToBounds = true
         
+        cell.joinButton.addTarget(self, action: #selector(joined(sender:)), for: .touchUpInside)
+        cell.joinButton.target(forAction: #selector(joined(sender:)), withSender: self)
+        cell.joinButton.tag = indexPath.row
+        
         return cell
+        
     }
     
-
+    @objc func joined(sender: UIButton!) {
+       
+        let joinedGroup = groups[Int(sender.tag)]
+        print(joinedGroup)
+    }
 }
