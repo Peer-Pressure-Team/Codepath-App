@@ -292,6 +292,7 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
               }
            }
         }
+        print("reload user info")
     }
     
     

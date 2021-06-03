@@ -22,13 +22,34 @@ class ProfileSettingViewController: UIViewController, UIImagePickerControllerDel
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        profileImage.layer.borderWidth = 1
+//        profileImage.layer.masksToBounds = false
+//        profileImage.layer.borderColor = UIColor.clear.cgColor
+//        profileImage.layer.cornerRadius = profileImage.frame.height/2
+//        profileImage.clipsToBounds = true
     }
     
     @IBAction func onBackButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    
+    @IBAction func onCameraButton(_ sender: Any) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        
+        present(picker, animated: true, completion: nil)
+    }
     @IBAction func onSaveButton(_ sender: UIButton) {
+        let imageData = profileImage.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
         var user = PFUser.current()!
         let query = PFQuery(className: "Usersetting")
         query.whereKey("username", equalTo: user["username"]!)
@@ -39,6 +60,7 @@ class ProfileSettingViewController: UIViewController, UIImagePickerControllerDel
                             usersetting!["username"] = self.usernameTextField.text!
                             usersetting!["location"] = self.locationtextField.text!
                             usersetting?["publicity"] = self.publicitySwitch.isOn
+                            usersetting?["image"] = file
                             usersetting?.saveInBackground { (success, error) in
                                 if success {
                                     // Refreshes original view controller. Too slow
@@ -85,30 +107,38 @@ class ProfileSettingViewController: UIViewController, UIImagePickerControllerDel
                         }
                     }
         
-        
-        
-//        let imageData = profileImage.image!.pngData()
-//        let file = PFFileObject(name: "image.png", data: imageData!)
-//
-//        usersetting["image"] = file
-        
         user.username = usernameTextField.text!
-//        user["image"] = file
+        user["image"] = file
         
         user.saveInBackground{
             (success,error) in
             if success {
                 print("User saved")
-                let parentVC = self.presentingViewController as? ProfileViewController
-                parentVC?.reloadUserInfo()
-                self.dismiss(animated: true, completion: nil)
+                
             } else {
                 print("Failed to save user: \(error)")
             }
         }
         
+        let parentVC = self.presentingViewController as? ProfileViewController
+        parentVC?.reloadUserInfo()
+        self.dismiss(animated: true, completion: nil)
+        
         
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        
+        let size = CGSize(width: 300, height: 300)
+        let scaledImage = image.af.imageScaled(to: size)
+        
+        profileImage.image = scaledImage
+        print("Image loaded")
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
     /*
     // MARK: - Navigation
 
