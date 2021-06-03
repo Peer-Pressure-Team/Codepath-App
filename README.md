@@ -39,12 +39,12 @@ We are the "PEER PRESSURE TEAM" now!!!
 
 **Optional Nice-to-have Stories**
 
-- [] Visually display habit progress
-- [] Share on social media platforms
-- [] Find users with similar goals
+- [ ] Visually display habit progress
+- [ ] Share on social media platforms
+- [ ] Find users with similar goals
 - [x] Search for groups or create a group
-- [] Challenge other users to complete a goal or form a habit
-- [] Privacy settings
+- [ ] Challenge other users to complete a goal or form a habit
+- [ ] Privacy settings
 
 ### 2. Screen Archetypes
 
