@@ -77,6 +77,18 @@ class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewD
     @objc func joined(sender: UIButton!) {
        
         let joinedGroup = groups[Int(sender.tag)]
-        print(joinedGroup)
+        joinedGroup.add(PFUser.current(), forKey: "members")
+        
+        let toHabit = joinedGroup["habitPointer"] as! PFObject
+        let firstQuery = PFQuery(className: "GroupHabit")
+        let groupHabit = try? firstQuery.getObjectWithId(toHabit.objectId!)
+        
+        let newHabit = PFObject(className: "Habit")
+        newHabit["username"] = PFUser.current()?.username
+        newHabit["habitName"] = groupHabit?["habitName"]
+        newHabit["period"] = "Weekly"
+        newHabit["goalCount"] = 3
+        newHabit["groupPointer"] = joinedGroup
+      
     }
 }
