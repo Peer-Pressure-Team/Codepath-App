@@ -78,6 +78,7 @@ class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewD
        
         let joinedGroup = groups[Int(sender.tag)]
         joinedGroup.add(PFUser.current(), forKey: "members")
+        print(joinedGroup)
         
         let toHabit = joinedGroup["habitPointer"] as! PFObject
         let firstQuery = PFQuery(className: "GroupHabit")
@@ -90,5 +91,6 @@ class ExploreViewController: UIViewController, UITableViewDelegate, UITableViewD
         newHabit["goalCount"] = 3
         newHabit["groupPointer"] = joinedGroup
       
+        joinedGroup.saveInBackground()
     }
 }

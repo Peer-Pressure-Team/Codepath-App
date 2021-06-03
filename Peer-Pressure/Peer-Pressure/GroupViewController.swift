@@ -19,7 +19,6 @@ class GroupViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
         let query = PFQuery(className: "Group")
         query.whereKey("members", equalTo: PFUser.current())
         query.limit = 20
@@ -27,8 +26,10 @@ class GroupViewController: UITableViewController {
         query.findObjectsInBackground { (groups, error) in
             if groups != nil {
                 self.groups = groups!
-                print("This")
+                print(groups as Any)
                 self.groupTableView.reloadData()
+            } else {
+                print(error?.localizedDescription as Any)
             }
         }
     }
