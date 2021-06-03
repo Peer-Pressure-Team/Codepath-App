@@ -21,6 +21,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     var totalStatuses: Int32 = 0
     var showsCommentBar = false
     var selectedStatus: PFObject!
+    var selectedUser: PFUser!
     
     override var inputAccessoryView: UIView? {
         return commentBar
@@ -96,6 +97,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.profileImageView.af.setImage(withURL: url)
             
             cell.statusId = status.objectId!
+            cell.user = user
             
             let numLikes = status["likesCount"] as! Int
             let likesText = String(numLikes) + " likes"
@@ -244,17 +246,37 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             commentBar.inputTextView.becomeFirstResponder()
             
             selectedStatus = status
+        } else {
+            self.performSegue(withIdentifier: "viewMore", sender: self)
         }
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow else {
+                return
+        }
+        
+        
+//        let user = statuses[selectedRow!]["user"] as! PFUser
+//        vc.user = user
+        
+        if (selectedIndexPath.section == 0 || selectedIndexPath.section == 1) {
+            selectedUser = statuses[selectedIndexPath.row]["user"] as? PFUser
+//            if selectedIndexPath.row == 0 { // Name Row
+//                dataToSend = "name"
+//            } else if selectedIndexPath.row == 1 { // School Row
+//                dataToSend = "school"
+//            } else if selectedIndexPath.row == 2 { // Grade Row
+//                dataToSend = "grade"
+//            }
 
+        }
+        
+        let feedProfileViewController = segue.destination as! FeedProfileViewController
+        feedProfileViewController.user = selectedUser
+    }
+    
 }

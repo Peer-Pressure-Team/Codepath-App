@@ -12,13 +12,14 @@ import AlamofireImage
 class FeedCell: UITableViewCell {
     var isLiked:Bool = false
     var statusId:String = "id"
+    var user:PFUser = PFUser()
     
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likesLabel: UILabel!
-    
+        
     @IBAction func onLike(_ sender: Any) {
         //query this status by objectId
         let query = PFQuery(className: "Status")
