@@ -41,6 +41,9 @@ class CreateHabitViewController: UIViewController {
         parseObject.saveInBackground {
           (success: Bool, error: Error?) in
           if (success) {
+            let parentVC = self.presentingViewController as? ProfileViewController
+            parentVC?.habbitTableView.reloadData()
+            self.dismiss(animated: true, completion: nil)
             print("Habit saved: \(parseObject["habitName"])")
           } else {
             print("Error saving Habit: \(parseObject["habitName"])")

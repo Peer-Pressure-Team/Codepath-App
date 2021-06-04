@@ -3,7 +3,7 @@ import AlamofireImage
 import Parse
 
 class CreateGroupViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-
+ 
     @IBOutlet weak var groupPicture: UIImageView!
     @IBOutlet weak var groupName: UITextField!
     
@@ -59,7 +59,7 @@ class CreateGroupViewController: UIViewController, UIImagePickerControllerDelega
         let size = CGSize(width: 300, height: 300)
         let scaledImage = image.af.imageScaled(to: size)
         
-        groupPicture.image = scaledImage
+        self.groupPicture.image = scaledImage
         
         dismiss(animated: true, completion: nil)
         

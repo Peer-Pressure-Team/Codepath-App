@@ -18,8 +18,9 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
     
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var habbitTableView: UITableView!
-    
     @IBOutlet weak var groupTableView: UITableView!
+    
+
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var userimage: UIImageView!
     
@@ -49,8 +50,8 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
             let group = groups[indexPath.section]
             print(group["groupName"]!)
             let cell: GroupCell = self.groupTableView.dequeueReusableCell(withIdentifier:"GroupCell", for: indexPath) as! GroupCell
-            cell.groupName?.text = group["groupName"] as? String
-            cell.groupMemberCount?.text = "\(group["memberCount"]!)"
+            cell.groupName.text = group["groupName"] as? String
+            cell.groupMemberCount.text! = "\(group["memberCount"] ?? "1" )"
 
             //let imageFile = group["image"] as! PFFileObject
             
@@ -263,6 +264,37 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         print("logout")
     }
     
+    func reloadUserInfo(){
+        var user = PFUser.current()!
+        username.text = user.username
+        
+
+        var firstQuery = PFQuery(className: "Usersetting")
+        //firstQuery.includeKeys(["location","publicity"])
+        firstQuery.whereKey("username", equalTo: user.username!)
+
+        firstQuery.getFirstObjectInBackground
+        {(user, error) in
+                        if user != nil {
+                            self.locationLabel.text = (user?["location"] as! String)
+
+                        } else {
+                            print("error in finding usersetting: \(String(describing: error))")
+                        }
+        }
+        let useravatar = user["image"] as? PFFileObject
+        useravatar?.getDataInBackground{ (imageData, error)in
+            DispatchQueue.main.async {
+              if imageData != nil, error == nil {
+                let image = UIImage(data: imageData!)
+                self.userimage.image = image
+
+              }
+           }
+        }
+        print("reload user info")
+    }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView == self.habbitTableView {
@@ -278,6 +310,9 @@ class ProfileViewController: UIViewController,UITableViewDataSource, UITableView
         performSegue(withIdentifier: "CreateHabitSegue", sender: self)
     }
     
+    @IBAction func onSettingButton(_ sender: Any) {
+        performSegue(withIdentifier: "settingSegue", sender: self)
+    }
     /*
     // MARK: - Navigation
 
