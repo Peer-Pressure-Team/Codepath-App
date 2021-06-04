@@ -1,17 +1,11 @@
-//
-//  GroupViewController.swift
-//  Peer-Pressure
-//
-//  Created by Leonardo Valdivia on 5/22/21.
-//
-
 import UIKit
 import Parse
 import AlamofireImage
 
 class GroupViewController: UITableViewController {
 
-    var groups = [PFObject]() 
+    var groups = [PFObject]()
+    var habit: String = ""
     
     @IBOutlet var groupTableView: UITableView!
     
@@ -27,14 +21,16 @@ class GroupViewController: UITableViewController {
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "Group")
-        //query.includeKey("author")
+        query.whereKey("members", equalTo: PFUser.current())
         query.limit = 20
         
         query.findObjectsInBackground { (groups, error) in
             if groups != nil {
                 self.groups = groups!
-                print("This")
+                print(groups as Any)
                 self.groupTableView.reloadData()
+            } else {
+                print(error?.localizedDescription as Any)
             }
         }
     }
@@ -53,11 +49,16 @@ class GroupViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell") as! GroupCell
         
         let group = groups[indexPath.row]
+        var toHabit = group["habitPointer"] as! PFObject
+        let firstQuery = PFQuery(className: "GroupHabit")
+
+        let groupHabit = try? firstQuery.getObjectWithId(toHabit.objectId!)
+        
         
         cell.groupName.text = (group["groupName"] as! String)
-        
         cell.groupMemberCount.text! = "Group Members: \(group["memberCount"] ?? "" )"
-        
+        cell.groupGoal.text = groupHabit?["habitName"] as! String
+        self.habit = groupHabit?["habitName"] as! String
         let imageFile = group["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
@@ -84,6 +85,7 @@ class GroupViewController: UITableViewController {
             let groupScreenViewController = segue.destination as! GroupScreenViewController
 
             groupScreenViewController.group = group
+            groupScreenViewController.habit = self.habit
        
             tableView.deselectRow(at: indexPath, animated: true)
         }

@@ -1,21 +1,18 @@
 //
-//  GroupCell.swift
+//  memberCell.swift
 //  Peer-Pressure
 //
-//  Created by qiru hu on 5/17/21.
+//  Created by Leonardo Valdivia on 6/3/21.
 //
 
 import UIKit
 
-class GroupCell: UITableViewCell {
+class memberCell: UITableViewCell {
 
-    @IBOutlet weak var groupName: UILabel!
-
-    @IBOutlet weak var groupMemberCount: UILabel!
-    @IBOutlet weak var groupImage: UIImageView!
-    @IBOutlet weak var groupGoal: UILabel!
-    @IBOutlet weak var joinButton: UIButton!
-    
+    @IBOutlet weak var memberPicture: UIImageView!
+    @IBOutlet weak var memberUsername: UILabel!
+    @IBOutlet weak var memberHabit: UILabel!
+    @IBOutlet weak var memberProgress: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
