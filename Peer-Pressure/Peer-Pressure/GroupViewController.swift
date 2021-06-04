@@ -5,6 +5,7 @@ import AlamofireImage
 class GroupViewController: UITableViewController {
 
     var groups = [PFObject]()
+    var habit: String = ""
     
     @IBOutlet var groupTableView: UITableView!
     
@@ -57,6 +58,7 @@ class GroupViewController: UITableViewController {
         cell.groupName.text = (group["groupName"] as! String)
         cell.groupMemberCount.text! = "Group Members: \(group["memberCount"] ?? "" )"
         cell.groupGoal.text = groupHabit?["habitName"] as! String
+        self.habit = groupHabit?["habitName"] as! String
         let imageFile = group["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
@@ -83,6 +85,7 @@ class GroupViewController: UITableViewController {
             let groupScreenViewController = segue.destination as! GroupScreenViewController
 
             groupScreenViewController.group = group
+            groupScreenViewController.habit = self.habit
        
             tableView.deselectRow(at: indexPath, animated: true)
         }

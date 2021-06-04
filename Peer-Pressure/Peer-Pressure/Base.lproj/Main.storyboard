@@ -942,8 +942,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="V5o-js-4ga" firstAttribute="top" secondItem="g7Q-kb-epI" secondAttribute="top" constant="11" id="1md-tI-dL9"/>
                                                 <constraint firstItem="V5o-js-4ga" firstAttribute="top" secondItem="ARU-eB-23A" secondAttribute="top" id="2A5-Y6-iT1"/>
                                                 <constraint firstItem="q0N-ap-eO4" firstAttribute="leading" secondItem="V5o-js-4ga" secondAttribute="trailing" constant="8" symbolic="YES" id="Je8-Mw-epf"/>
+                                                <constraint firstAttribute="bottom" secondItem="V5o-js-4ga" secondAttribute="bottom" constant="9" id="Ro6-X4-GAL"/>
                                                 <constraint firstItem="q0N-ap-eO4" firstAttribute="top" secondItem="ARU-eB-23A" secondAttribute="bottom" constant="8" symbolic="YES" id="T8x-6q-J3S"/>
                                                 <constraint firstItem="V5o-js-4ga" firstAttribute="leading" secondItem="g7Q-kb-epI" secondAttribute="leadingMargin" id="hA5-AR-e6e"/>
                                                 <constraint firstItem="ARU-eB-23A" firstAttribute="leading" secondItem="V5o-js-4ga" secondAttribute="trailing" constant="8" id="iVT-YR-BAh"/>
@@ -1003,6 +1005,8 @@
                     <connections>
                         <outlet property="memberTableView" destination="AQQ-KM-lua" id="aKm-O6-JqQ"/>
                         <outlet property="navBar" destination="3XJ-rp-GD6" id="cd1-V4-eIr"/>
+                        <outlet property="userPicture" destination="yEk-3s-Kn7" id="T7I-aL-IcM"/>
+                        <outlet property="username" destination="eg8-om-Fqk" id="qUG-QJ-TjH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cu7-Ak-enC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
