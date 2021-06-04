@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
         }
-        var parseObject = PFObject(className:"UserSetting")
+        var parseObject = PFObject(className:"Usersetting")
         parseObject["username"] = user.username
         // Saves the new object.
         parseObject.saveInBackground {
