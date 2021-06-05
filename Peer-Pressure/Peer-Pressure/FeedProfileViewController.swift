@@ -176,7 +176,7 @@ class FeedProfileViewController: UIViewController, UITableViewDataSource, UITabl
         
         let thirdQuery = PFQuery(className: "Group")
         thirdQuery.includeKeys(["groupName","location","image","memberCount", "groupProgress"])
-        thirdQuery.whereKey("username", equalTo: user?["username"]!)
+        thirdQuery.whereKey("members", equalTo: PFUser.current())
 
         thirdQuery.findObjectsInBackground { (groups, error) in
                         if groups != nil {
